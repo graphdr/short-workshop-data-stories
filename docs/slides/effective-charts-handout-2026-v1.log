@@ -1,0 +1,1186 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  7 FEB 2026 11:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**effective-charts-handout-2026-v1.tex
+(./effective-charts-handout-2026-v1.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tufte-latex/tufte-handout.cls
+Document Class: tufte-handout 2015/06/21 v3.5.2 Tufte-handout class
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tufte-latex/tufte-common.def
+File: tufte-common.def 2015/06/21 v3.5.2 Common code for the Tufte-LaTeX styles
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+\XKV@tempb@toks=\toks19
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count275
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count276
+\calc@Bcount=\count277
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count278
+\calc@Cskip=\skip51
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hardwrap/hardwrap.sty
+Package: hardwrap 2011/02/12 v0.2 Hard wrap messages
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\hw@charcount=\count279
+\hw@wordcount=\count280
+\hw@maxprintline=\count281
+)
+Class tufte-handout Info: Loading the base class `article'
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count282
+\c@section=\count283
+\c@subsection=\count284
+\c@subsubsection=\count285
+\c@paragraph=\count286
+\c@subparagraph=\count287
+\c@figure=\count288
+\c@table=\count289
+\abovecaptionskip=\skip52
+\belowcaptionskip=\skip53
+\bibindent=\dimen150
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
+\ttl@plus=\dimen151
+\ttl@minus=\dimen152
+\ttl@toksa=\toks20
+\titlewidth=\dimen153
+\titlewidthlast=\dimen154
+\titlewidthfirst=\dimen155
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2025/01/04 v2.17 TOC entries
+\ttl@leftsep=\dimen156
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count290
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count291
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen157
+\Hy@linkcounter=\count292
+\Hy@pagecounter=\count293
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count294
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4072.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count295
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen158
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count296
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count297
+\c@Item=\count298
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip56
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip57
+\RaggedLeftLeftskip=\skip58
+\RaggedRightLeftskip=\skip59
+\CenteringRightskip=\skip60
+\RaggedLeftRightskip=\skip61
+\RaggedRightRightskip=\skip62
+\CenteringParfillskip=\skip63
+\RaggedLeftParfillskip=\skip64
+\RaggedRightParfillskip=\skip65
+\JustifyingParfillskip=\skip66
+\CenteringParindent=\skip67
+\RaggedLeftParindent=\skip68
+\RaggedRightParindent=\skip69
+\JustifyingParindent=\skip70
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count301
+\Gm@cntv=\count302
+\c@Gm@tempcnt=\count303
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks21
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count304
+\cp@tempcnt=\count305
+)
+\@tufte@overhang=\skip71
+\@tufte@fullwidth=\skip72
+\@tufte@caption@fill=\skip73
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip74
+\plpartopsep=\skip75
+\plitemsep=\skip76
+\plparsep=\skip77
+\pl@lab=\toks22
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2025/02/16 v1.05 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/letterspace.sty
+Package: letterspace 2025/07/09 v3.2b Robust letterspacing (RS)
+LaTeX Info: Redefining \lsstyle on input line 343.
+LaTeX Info: Redefining \lslig on input line 344.
+LaTeX Info: Redefining \textls on input line 372.
+\MT@outer@kern=\dimen169
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 265.
+
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip78
+\bibsep=\skip79
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count306
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
+No file effective-charts-handout-2026-v1.bbl.
+\c@@tufte@num@bibkeys=\count307
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sauerj/optparams.sty
+Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
+)
+\@tufte@sidenote@vertical@offset=\skip80
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+\@tufte@margin@floatbox=\box54
+\@tufte@figure@box=\box55
+\@tufte@caption@box=\box56
+\@tufte@caption@vertical@offset=\skip81
+\@tufte@float@contents@width=\skip82
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+pplj on input line 116.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/t1pplj.fd
+File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
+)) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip83
+\f@nch@offset@elh=\skip84
+\f@nch@offset@erh=\skip85
+\f@nch@offset@olh=\skip86
+\f@nch@offset@orh=\skip87
+\f@nch@offset@elf=\skip88
+\f@nch@offset@erf=\skip89
+\f@nch@offset@olf=\skip90
+\f@nch@offset@orf=\skip91
+\f@nch@height=\skip92
+\f@nch@footalignment=\skip93
+\f@nch@widthL=\skip94
+\f@nch@widthC=\skip95
+\f@nch@widthR=\skip96
+\@temptokenb=\toks23
+)
+\tufteskipamount=\skip97
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count308
+\mult@box=\box57
+\multicol@leftmargin=\dimen170
+\c@unbalance=\count309
+\c@collectmore=\count310
+\doublecol@number=\count311
+\multicoltolerance=\count312
+\multicolpretolerance=\count313
+\full@width=\dimen171
+\page@free=\dimen172
+\premulticols=\dimen173
+\postmulticols=\dimen174
+\multicolsep=\skip98
+\multicolbaselineskip=\skip99
+\partial@page=\box58
+\last@line=\box59
+\mc@boxedresult=\box60
+\maxbalancingoverflow=\dimen175
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@firstbox=\box63
+\mult@gfirstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\c@minrows=\count314
+\c@columnbadness=\count315
+\c@finalcolumnbadness=\count316
+\last@try=\dimen176
+\multicolovershoot=\dimen177
+\multicolundershoot=\dimen178
+\mult@nat@firstbox=\box101
+\colbreak@box=\box102
+\mc@col@check@num=\count317
+\g__mc_curr_col_int=\count318
+))) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks24
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip100
+For additional information on amsmath, use the `?' option.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen179
+)) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen180
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count319
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count320
+\leftroot@=\count321
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count322
+\DOTSCASE@=\count323
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box103
+\strutbox@=\box104
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen181
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count324
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count325
+\dotsspace@=\muskip18
+\c@parentequation=\count326
+\dspbrk@lvl=\count327
+\tag@help=\toks26
+\row@=\count328
+\column@=\count329
+\maxfields@=\count330
+\andhelp@=\toks27
+\eqnshift@=\dimen182
+\alignsep@=\dimen183
+\tagshift@=\dimen184
+\tagwidth@=\dimen185
+\totwidth@=\dimen186
+\lineht@=\dimen187
+\@envbody=\toks28
+\multlinegap=\skip101
+\multlinetaggap=\skip102
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen188
+\Gin@req@width=\dimen189
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen190
+\lightrulewidth=\dimen191
+\cmidrulewidth=\dimen192
+\belowrulesep=\dimen193
+\belowbottomsep=\dimen194
+\aboverulesep=\dimen195
+\abovetopsep=\dimen196
+\cmidrulesep=\dimen197
+\cmidrulekern=\dimen198
+\defaultaddspace=\dimen199
+\@cmidla=\count331
+\@cmidlb=\count332
+\@aboverulesep=\dimen256
+\@belowrulesep=\dimen257
+\@thisruleclass=\count333
+\@lastruleclass=\count334
+\@thisrulewidth=\dimen258
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/units/units.sty
+Package: units 1998/08/04 v0.9b Typesetting units
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip103
+\L@UnitsRaiseTextstyle=\skip104
+\L@UnitsRaiseScriptstyle=\skip105
+)) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip106
+\LTright=\skip107
+\LTpre=\skip108
+\LTpost=\skip109
+\LTchunksize=\count335
+\LTcapwidth=\dimen259
+\LT@head=\box105
+\LT@firsthead=\box106
+\LT@foot=\box107
+\LT@lastfoot=\box108
+\LT@gbox=\box109
+\LT@cols=\count336
+\LT@rows=\count337
+\c@LT@tables=\count338
+\c@LT@chunks=\count339
+\LT@p@ftn=\toks32
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen260
+\ar@mcellbox=\box110
+\extrarowheight=\dimen261
+\NC@list=\toks33
+\extratabsurround=\skip110
+\backup@length=\skip111
+\ar@cellbox=\box111
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box112
+\fn@width=\dimen262
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box113
+\UL@hyphenbox=\box114
+\UL@skip=\skip112
+\UL@hook=\toks34
+\UL@height=\dimen263
+\UL@pe=\count340
+\UL@pixel=\dimen264
+\ULC@box=\box115
+Package: ulem 2019/11/18
+\ULdepth=\dimen265
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2025/01/28 v1.1a Raise limit of unprocessed floats (HMM)
+Package morefloats Info: Maximum number of possible floats asked for: 36
+(morefloats)             (i.e. 18 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
+) (c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count341
+) (./effective-charts-handout-2026-v1.aux)
+\openout1 = `effective-charts-handout-2026-v1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+Package hyperref Info: Link coloring OFF on input line 81.
+(./effective-charts-handout-2026-v1.out) (./effective-charts-handout-2026-v1.out)
+\@outlinefile=\write3
+\openout3 = `effective-charts-handout-2026-v1.out'.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(72.26999pt, 312.0pt, 230.02501pt)
+* v-part:(T,H,B)=(72.26999pt, 616.0pt, 106.7pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=312.0pt
+* \textheight=616.0pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-42.0pt
+* \headheight=14.0pt
+* \headsep=28.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=24.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\langwohyphens=\language6
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 90.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 90.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 90.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 90.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 90.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 90.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 90.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 90.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 90.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 90.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 90.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 92.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 92.
+
+LaTeX Warning: Marginpar on page 1 moved.
+
+<img/handout-day1-outline-2024.png, id=34, 452.4403pt x 391.4625pt>
+File: img/handout-day1-outline-2024.png Graphic file (type png)
+<use img/handout-day1-outline-2024.png>
+Package pdftex.def Info: img/handout-day1-outline-2024.png  used on input line 103.
+(pdftex.def)             Requested size: 234.00003pt x 202.46259pt.
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-3-1.pdf, id=35, 289.08pt x 3.01125pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-3-1.pdf  used on input line 105.
+(pdftex.def)             Requested size: 312.01648pt x 3.25015pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 105--106
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-4-1.pdf, id=36, 289.08pt x 21.07875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-4-1.pdf  used on input line 113.
+(pdftex.def)             Requested size: 312.01648pt x 22.75117pt.
+<img/handout-01-01-v2.png, id=37, 1557.56906pt x 597.73312pt>
+File: img/handout-01-01-v2.png Graphic file (type png)
+<use img/handout-01-01-v2.png>
+Package pdftex.def Info: img/handout-01-01-v2.png  used on input line 115.
+(pdftex.def)             Requested size: 467.98732pt x 179.59494pt.
+
+Overfull \hbox (167.98732pt too wide) in paragraph at lines 115--116
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-5-1.pdf, id=39, 289.08pt x 21.07875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-5-1.pdf  used on input line 117.
+(pdftex.def)             Requested size: 312.01648pt x 22.75117pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 117--118
+[][]  
+ []
+
+<img/pie-preview.png, id=40, 493.845pt x 490.83376pt>
+File: img/pie-preview.png Graphic file (type png)
+<use img/pie-preview.png>
+Package pdftex.def Info: img/pie-preview.png  used on input line 127.
+(pdftex.def)             Requested size: 71.99376pt x 71.55478pt.
+[1
+
+{c:/Users/layto/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc} <./img/handout-day1-outline-2024.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-3-1.pdf> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-4-1.pdf> <./img/handout-01-01-v2.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-5-1.pdf>]
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 133.
+(c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-8-1.pdf, id=70, 289.08pt x 21.07875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-8-1.pdf  used on input line 140.
+(pdftex.def)             Requested size: 312.01648pt x 22.75117pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 140--141
+[][]  
+ []
+
+<img/handout-01-02.png, id=71, 1087.06125pt x 346.29375pt>
+File: img/handout-01-02.png Graphic file (type png)
+<use img/handout-01-02.png>
+Package pdftex.def Info: img/handout-01-02.png  used on input line 142.
+(pdftex.def)             Requested size: 468.00778pt x 149.08833pt.
+
+Overfull \hbox (168.00778pt too wide) in paragraph at lines 142--143
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-9-1.pdf, id=72, 289.08pt x 72.27pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-9-1.pdf  used on input line 144.
+(pdftex.def)             Requested size: 312.01648pt x 78.00409pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 144--145
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-10-1.pdf, id=73, 289.08pt x 21.07875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-10-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-10-1.pdf  used on input line 149.
+(pdftex.def)             Requested size: 312.01648pt x 22.75117pt.
+<img/handout-01-03-v2.png, id=74, 1546.27687pt x 624.83438pt>
+File: img/handout-01-03-v2.png Graphic file (type png)
+<use img/handout-01-03-v2.png>
+Package pdftex.def Info: img/handout-01-03-v2.png  used on input line 151.
+(pdftex.def)             Requested size: 467.99205pt x 189.1107pt.
+
+Overfull \hbox (167.99205pt too wide) in paragraph at lines 151--152
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-11-1.pdf, id=75, 289.08pt x 21.07875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-11-1.pdf  used on input line 153.
+(pdftex.def)             Requested size: 312.01648pt x 22.75117pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 153--154
+[][]  
+ []
+
+<img/three-d-pie-preview.png, id=76, 434.37282pt x 256.70906pt>
+File: img/three-d-pie-preview.png Graphic file (type png)
+<use img/three-d-pie-preview.png>
+Package pdftex.def Info: img/three-d-pie-preview.png  used on input line 163.
+(pdftex.def)             Requested size: 71.99982pt x 42.55101pt.
+[2 <./img/pie-preview.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-8-1.pdf> <./img/handout-01-02.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-9-1.pdf> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-10-1.pdf> <./img/handout-01-03-v2.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-11-1.pdf>]
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-14-1.pdf, id=106, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-14-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-14-1.pdf  used on input line 176.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 176--177
+[][]  
+ []
+
+<img/handout-01-04.png, id=107, 1086.30844pt x 353.82187pt>
+File: img/handout-01-04.png Graphic file (type png)
+<use img/handout-01-04.png>
+Package pdftex.def Info: img/handout-01-04.png  used on input line 178.
+(pdftex.def)             Requested size: 467.99861pt x 152.43198pt.
+
+Overfull \hbox (167.99861pt too wide) in paragraph at lines 178--179
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-15-1.pdf, id=108, 289.08pt x 43.16125pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-15-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-15-1.pdf  used on input line 180.
+(pdftex.def)             Requested size: 312.01648pt x 46.58577pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 180--181
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-16-1.pdf, id=109, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-16-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-16-1.pdf  used on input line 188.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+<img/handout-01-05-v2.png, id=110, 1559.07469pt x 677.53125pt>
+File: img/handout-01-05-v2.png Graphic file (type png)
+<use img/handout-01-05-v2.png>
+Package pdftex.def Info: img/handout-01-05-v2.png  used on input line 190.
+(pdftex.def)             Requested size: 467.9877pt x 203.37466pt.
+
+Overfull \hbox (167.9877pt too wide) in paragraph at lines 190--191
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-17-1.pdf, id=111, 289.08pt x 21.07875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-17-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-17-1.pdf  used on input line 192.
+(pdftex.def)             Requested size: 312.01648pt x 22.75117pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 192--193
+[][]  
+ []
+
+<img/three-d-bar-preview.png, id=112, 441.90094pt x 206.27063pt>
+File: img/three-d-bar-preview.png Graphic file (type png)
+<use img/three-d-bar-preview.png>
+Package pdftex.def Info: img/three-d-bar-preview.png  used on input line 202.
+(pdftex.def)             Requested size: 72.00021pt x 33.60828pt.
+[3 <./img/three-d-pie-preview.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-14-1.pdf> <./img/handout-01-04.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-15-1.pdf> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-16-1.pdf> <./img/handout-01-05-v2.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-17-1.pdf>]
+
+LaTeX Warning: Marginpar on page 4 moved.
+
+
+LaTeX Warning: Marginpar on page 4 moved.
+
+<img/handout-01-06.png, id=141, 1090.0725pt x 348.55219pt>
+File: img/handout-01-06.png Graphic file (type png)
+<use img/handout-01-06.png>
+Package pdftex.def Info: img/handout-01-06.png  used on input line 215.
+(pdftex.def)             Requested size: 467.99019pt x 149.64049pt.
+
+Overfull \hbox (167.99019pt too wide) in paragraph at lines 215--216
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-20-1.pdf, id=142, 289.08pt x 72.27pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-20-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-20-1.pdf  used on input line 217.
+(pdftex.def)             Requested size: 312.01648pt x 78.00409pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 217--218
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-21-1.pdf, id=143, 289.08pt x 36.135pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-21-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-21-1.pdf  used on input line 231.
+(pdftex.def)             Requested size: 312.01648pt x 39.00203pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 231--232
+[][]  
+ []
+
+<img/handout-01-08.png, id=144, 736.25063pt x 320.69812pt>
+File: img/handout-01-08.png Graphic file (type png)
+<use img/handout-01-08.png>
+Package pdftex.def Info: img/handout-01-08.png  used on input line 244.
+(pdftex.def)             Requested size: 144.00081pt x 62.72427pt.
+<img/handout-01-09.png, id=145, 728.7225pt x 303.38344pt>
+File: img/handout-01-09.png Graphic file (type png)
+<use img/handout-01-09.png>
+Package pdftex.def Info: img/handout-01-09.png  used on input line 246.
+(pdftex.def)             Requested size: 143.99617pt x 59.9488pt.
+<img/handout-01-10.png, id=146, 733.23938pt x 304.88907pt>
+File: img/handout-01-10.png Graphic file (type png)
+<use img/handout-01-10.png>
+Package pdftex.def Info: img/handout-01-10.png  used on input line 248.
+(pdftex.def)             Requested size: 143.99364pt x 59.87415pt.
+<img/handout-01-11.png, id=147, 733.23938pt x 310.91156pt>
+File: img/handout-01-11.png Graphic file (type png)
+<use img/handout-01-11.png>
+Package pdftex.def Info: img/handout-01-11.png  used on input line 250.
+(pdftex.def)             Requested size: 143.99364pt x 61.05684pt.
+
+Underfull \hbox (badness 2556) in paragraph at lines 243--251
+\T1/pplj/m/n/8 Default bar chart: 
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 243--251
+\T1/pplj/m/n/8 Or-dered by mag-ni-tude: 
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 243--251
+\T1/pplj/m/n/8 Omit-ting the fill color: 
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 243--251
+\T1/pplj/m/n/8 Pro-duces a dot chart: 
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-23-1.pdf, id=148, 289.08pt x 36.135pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-23-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-23-1.pdf  used on input line 255.
+(pdftex.def)             Requested size: 312.01648pt x 39.00203pt.
+[4 <./img/three-d-bar-preview.png> <./img/handout-01-06.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-20-1.pdf> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-21-1.pdf> <./img/handout-01-08.png> <./img/handout-01-09.png> <./img/handout-01-10.png> <./img/handout-01-11.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-23-1.pdf>]
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-24-1.pdf, id=177, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-24-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-24-1.pdf  used on input line 267.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 267--268
+[][]  
+ []
+
+<img/sdu-energy-00.png, id=178, 773.89125pt x 522.45187pt>
+File: img/sdu-energy-00.png Graphic file (type png)
+<use img/sdu-energy-00.png>
+Package pdftex.def Info: img/sdu-energy-00.png  used on input line 269.
+(pdftex.def)             Requested size: 483.59818pt x 326.47581pt.
+
+Overfull \hbox (183.59818pt too wide) in paragraph at lines 269--270
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-25-1.pdf, id=179, 289.08pt x 50.1875pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-25-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-25-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-25-1.pdf  used on input line 280.
+(pdftex.def)             Requested size: 312.01648pt x 54.16951pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 280--281
+[][]  
+ []
+
+[5 <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-24-1.pdf> <./img/sdu-energy-00.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-25-1.pdf>]
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-26-1.pdf, id=194, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-26-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-26-1.pdf  used on input line 301.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 301--302
+[][]  
+ []
+
+<img/sdu-rows-of-charts-2.png, id=195, 269.589pt x 166.878pt>
+File: img/sdu-rows-of-charts-2.png Graphic file (type png)
+<use img/sdu-rows-of-charts-2.png>
+Package pdftex.def Info: img/sdu-rows-of-charts-2.png  used on input line 303.
+(pdftex.def)             Requested size: 483.6473pt x 299.38197pt.
+
+Overfull \hbox (183.6473pt too wide) in paragraph at lines 303--304
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-27-1.pdf, id=196, 289.08pt x 72.27pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-27-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-27-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-27-1.pdf  used on input line 313.
+(pdftex.def)             Requested size: 312.01648pt x 78.00409pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 313--314
+[][]  
+ []
+
+[6 <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-26-1.pdf> <./img/sdu-rows-of-charts-2.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-27-1.pdf>]
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-28-1.pdf, id=214, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-28-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-28-1.pdf  used on input line 330.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 330--331
+[][]  
+ []
+
+<img/sdu-elec-by-month.png, id=215, 1156.32pt x 650.43pt>
+File: img/sdu-elec-by-month.png Graphic file (type png)
+<use img/sdu-elec-by-month.png>
+Package pdftex.def Info: img/sdu-elec-by-month.png  used on input line 332.
+(pdftex.def)             Requested size: 483.58675pt x 272.01753pt.
+
+Overfull \hbox (183.58675pt too wide) in paragraph at lines 332--333
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-29-1.pdf, id=216, 289.08pt x 79.29625pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-29-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-29-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-29-1.pdf  used on input line 342.
+(pdftex.def)             Requested size: 312.01648pt x 85.58783pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 342--343
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-30-1.pdf, id=217, 289.08pt x 36.135pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-30-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-30-1.pdf  used on input line 351.
+(pdftex.def)             Requested size: 312.01648pt x 39.00203pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 351--352
+[][]  
+ []
+
+[7 <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-28-1.pdf> <./img/sdu-elec-by-month.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-29-1.pdf> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-30-1.pdf>]
+<img/sdu-month-1-panel-v2.png, id=240, 410.2828pt x 314.67563pt>
+File: img/sdu-month-1-panel-v2.png Graphic file (type png)
+<use img/sdu-month-1-panel-v2.png>
+Package pdftex.def Info: img/sdu-month-1-panel-v2.png  used on input line 381.
+(pdftex.def)             Requested size: 187.19858pt x 143.57616pt.
+<img/sdu-hour-1-panel-v2.png, id=241, 408.02437pt x 287.57437pt>
+File: img/sdu-hour-1-panel-v2.png Graphic file (type png)
+<use img/sdu-hour-1-panel-v2.png>
+Package pdftex.def Info: img/sdu-hour-1-panel-v2.png  used on input line 394.
+(pdftex.def)             Requested size: 187.20163pt x 131.93916pt.
+[8 <./img/sdu-month-1-panel-v2.png> <./img/sdu-hour-1-panel-v2.png>]
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-31-1.pdf, id=249, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-31-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-31-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-31-1.pdf  used on input line 402.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 402--403
+[][]  
+ []
+
+<img/sdu-elec-by-hour.png, id=250, 1156.32pt x 650.43pt>
+File: img/sdu-elec-by-hour.png Graphic file (type png)
+<use img/sdu-elec-by-hour.png>
+Package pdftex.def Info: img/sdu-elec-by-hour.png  used on input line 404.
+(pdftex.def)             Requested size: 483.58675pt x 272.01753pt.
+
+Overfull \hbox (183.58675pt too wide) in paragraph at lines 404--405
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-32-1.pdf, id=251, 289.08pt x 180.675pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-32-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-32-1.pdf  used on input line 414.
+(pdftex.def)             Requested size: 312.01648pt x 195.01028pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 414--415
+[][]  
+ []
+
+[9 <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-31-1.pdf> <./img/sdu-elec-by-hour.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-32-1.pdf>]
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-33-1.pdf, id=268, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-33-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-33-1.pdf  used on input line 422.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 422--423
+[][]  
+ []
+
+<img/sdu-elec-by-hour-pct.png, id=269, 1156.32pt x 650.43pt>
+File: img/sdu-elec-by-hour-pct.png Graphic file (type png)
+<use img/sdu-elec-by-hour-pct.png>
+Package pdftex.def Info: img/sdu-elec-by-hour-pct.png  used on input line 424.
+(pdftex.def)             Requested size: 483.58675pt x 272.01753pt.
+
+Overfull \hbox (183.58675pt too wide) in paragraph at lines 424--425
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-34-1.pdf, id=270, 289.08pt x 158.5925pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-34-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-34-1.pdf  used on input line 434.
+(pdftex.def)             Requested size: 312.01648pt x 171.17567pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 434--435
+[][]  
+ []
+
+[10 <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-33-1.pdf> <./img/sdu-elec-by-hour-pct.png> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-34-1.pdf>]
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-36-1.pdf, id=287, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-36-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-36-1.pdf  used on input line 462.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 462--463
+[][]  
+ []
+
+<effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-37-1.pdf, id=288, 289.08pt x 14.0525pt>
+File: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
+<use effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-37-1.pdf>
+Package pdftex.def Info: effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-37-1.pdf  used on input line 487.
+(pdftex.def)             Requested size: 312.01648pt x 15.16745pt.
+
+Overfull \hbox (12.01648pt too wide) in paragraph at lines 487--488
+[][]  
+ []
+
+[11 <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-36-1.pdf> <./effective-charts-handout-2026-v1_files/figure-latex/unnamed-chunk-37-1.pdf>]
+
+Package bibentry Warning: You have used \nobibliography* 
+(bibentry)                without a following \bibliography.
+(bibentry)                You may not be able to run BibTeX.
+
+[12] (./effective-charts-handout-2026-v1.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `effective-charts-handout-2026-v1.out' has not changed.
+(rerunfilecheck)             Checksum: 9505267CBDB103ADDE863C12EB69687D;1376.
+ ) 
+Here is how much of TeX's memory you used:
+ 14744 strings out of 469453
+ 252749 string characters out of 5466066
+ 663526 words of memory out of 5000000
+ 43081 multiletter control sequences out of 15000+600000
+ 680931 words of font info for 119 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 96i,12n,101p,431b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/layto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> <c:/Users/layto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk><c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/layto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on effective-charts-handout-2026-v1.pdf (12 pages, 3630273 bytes).
+PDF statistics:
+ 401 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 1321 words of extra memory for PDF output out of 10000 (max. 10000000)
+

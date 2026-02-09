@@ -1,0 +1,532 @@
+\documentclass[]{tufte-handout}
+
+% ams
+\usepackage{amssymb,amsmath}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \makeatletter
+  \@ifpackageloaded{fontspec}{}{\usepackage{fontspec}}
+  \makeatother
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \makeatletter
+  \@ifpackageloaded{soul}{
+     \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+     \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+   }{}
+  \makeatother
+
+\fi
+
+% graphix
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+
+% booktabs
+\usepackage{booktabs}
+
+% url
+\usepackage{url}
+
+% hyperref
+\usepackage{hyperref}
+
+% units.
+\usepackage{units}
+
+
+\setcounter{secnumdepth}{-1}
+
+% citations
+
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% For Pandoc 2.8 to 2.11
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For pandoc 2.11+ using new --citeproc
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+% pandoc syntax highlighting
+
+% table with pandoc
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+% multiplecol
+\usepackage{multicol}
+
+% strikeout
+\usepackage[normalem]{ulem}
+
+% morefloats
+\usepackage{morefloats}
+
+
+% tightlist macro required by pandoc >= 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% title / author / date
+\title[More effective charts]{Creating more effective charts}
+\author{Richard Layton}
+\date{2026--02--10}
+
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\begin{marginfigure}
+\emph{Richard Layton} resides online at
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://www.graphdoctor.com}\strut \\
+\item
+  \url{https://github.com/graphdr}
+\end{itemize}
+\end{marginfigure}
+
+\section{Perception, reasoning, and
+credibility}\label{perception-reasoning-and-credibility}
+
+\begin{marginfigure}
+\emph{Creating More Effective Graphs} by Naomi Robbins (2013) inspired
+the session title and Chapter 2, ``Limitations of some common graphs,''
+inspired our exercises.
+\end{marginfigure}
+
+\includegraphics[width=0.75\linewidth,height=\textheight,keepaspectratio]{img/handout-day1-outline-2024.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-3-1}
+
+\section{§ Effective alternatives to pie
+charts}\label{effective-alternatives-to-pie-charts}
+
+\subsection{Judging pie slices is a low-accuracy
+task}\label{judging-pie-slices-is-a-low-accuracy-task}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-4-1}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{img/handout-01-01-v2.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-5-1}
+
+\begin{marginfigure}
+Data source: World Bank (2022)
+\end{marginfigure}
+
+\subsection{Judging values along a common axis is a high-accuracy
+task}\label{judging-values-along-a-common-axis-is-a-high-accuracy-task}
+
+\begin{marginfigure}
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{img/pie-preview.png}
+\end{marginfigure}
+\marginnote{The data from the pie chart is shown below as dots along a common scale.}
+
+\begin{itemize}
+\item
+  The new chart displays the same data
+\item
+  \emph{Visually estimate} the percentages using the new chart
+\item
+  Fill-in the blanks in the table
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-8-1}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{img/handout-01-02.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-9-1}
+
+\subsection{3D effects distort our judgment even
+further}\label{d-effects-distort-our-judgment-even-further}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-10-1}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{img/handout-01-03-v2.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-11-1}
+
+\begin{marginfigure}
+Data source: World Bank (2022)
+\end{marginfigure}
+
+\subsection{Again, a common scale improves our visual
+judgments}\label{again-a-common-scale-improves-our-visual-judgments}
+
+\begin{marginfigure}
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{img/three-d-pie-preview.png}
+\end{marginfigure}
+\marginnote{The data from the pie chart is shown below as dots along a common scale.}
+
+\begin{itemize}
+\item
+  The new chart displays the same data
+\item
+  \emph{Visually estimate} the percentages using the new chart
+\item
+  Fill-in the blanks in the table
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-14-1}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{img/handout-01-04.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-15-1}
+
+\section{§ Effective alternatives to bar
+charts}\label{effective-alternatives-to-bar-charts}
+
+\subsection{3D effects always distort our
+judgment}\label{d-effects-always-distort-our-judgment}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-16-1}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{img/handout-01-05-v2.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-17-1}
+
+\begin{marginfigure}
+Data source: World Bank (2022)
+\end{marginfigure}
+
+\subsection{Same data---without 3D effects---along a common
+scale}\label{same-datawithout-3d-effectsalong-a-common-scale}
+
+\begin{marginfigure}
+\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{img/three-d-bar-preview.png}
+\end{marginfigure}
+\marginnote{The data from the 3D bar chart is shown below as dots along a common scale.}
+
+\begin{itemize}
+\item
+  The new chart displays the same data
+\item
+  Visually estimate the percentages using the new chart
+\item
+  Fill-in the blanks in the table
+\end{itemize}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{img/handout-01-06.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-20-1}
+
+\subsection{With a zero baseline and no 3D effects, bars are
+OK}\label{with-a-zero-baseline-and-no-3d-effects-bars-are-ok}
+
+\begin{itemize}
+\item
+  Zero baseline avoids deception
+\item
+  Ordered by data values
+\item
+  Only the endpoint encodes information
+\end{itemize}
+
+\subsection{Consider dot charts for}\label{consider-dot-charts-for}
+
+\begin{itemize}
+\item
+  Visually comparing quantities
+\item
+  Replacing most pie and bar charts
+\end{itemize}
+
+\begin{marginfigure}
+Default bar chart:
+\pandocbounded{\includegraphics[keepaspectratio]{img/handout-01-08.png}}
+Ordered by magnitude:
+\pandocbounded{\includegraphics[keepaspectratio]{img/handout-01-09.png}}
+Omitting the fill color:
+\pandocbounded{\includegraphics[keepaspectratio]{img/handout-01-10.png}}
+Produces a dot chart:
+\pandocbounded{\includegraphics[keepaspectratio]{img/handout-01-11.png}}
+\end{marginfigure}
+
+\subsection{Notes}\label{notes}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-22-1}
+
+\section{§ Aligning the design to the
+story}\label{aligning-the-design-to-the-story}
+
+Redesigning a chart to find what stories might be in the data
+
+\newthought{The appendix of the USD energy report} includes this
+stacked-column chart.
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-23-1}
+
+\includegraphics[width=1.55\linewidth,height=\textheight,keepaspectratio]{img/sdu-energy-00.png}
+
+\newthought{After we discuss these data,} write your thoughts in
+response to these prompts:
+
+\begin{itemize}
+\tightlist
+\item
+  What does the chart show clearly?
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-24-1}
+
+\begin{itemize}
+\tightlist
+\item
+  What does the chart not show clearly?
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-25-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Describe the problems faced by a reader trying to compare and contrast
+  trends over 12 months (12 charts like this one).
+\end{itemize}
+
+\subsection{Redesign}\label{redesign}
+
+In this multi-faceted chart, we can see the trends for each of the three
+demand sources independently of one another, plus the total in the top
+row, spanning the full year.
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-26-1}
+
+\includegraphics[width=1.55\linewidth,height=\textheight,keepaspectratio]{img/sdu-elec-by-month.png}
+
+\newthought{After we discuss these data,} write your thoughts in
+response to these prompts:
+
+\begin{itemize}
+\tightlist
+\item
+  What observations (even obvious ones) can you make?
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-27-1}
+
+\begin{itemize}
+\tightlist
+\item
+  What attributes of this design, compared to the original stacked-bar
+  chart, \emph{help the reader} to find stories in the data?
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-28-1}
+
+\subsection{A second redesign}\label{a-second-redesign}
+
+Electrical power is recorded on the peak demand day in each month. The
+three measured quantities (solar, fuel cell, and metered kW) are
+dependent on two discrete time variables.
+
+\begin{description}
+\item[month]
+of the fiscal year, from July 2018 to June 2019
+\item[time of day]
+in 15-minute discrete intervals from 12:15 am to the following midnight
+(or, using a 24 hour clock, from 0015 hours to 2400 hours).
+\end{description}
+
+In the previous design, we used time of day for the horizontal scale of
+each panel and month to organize the sequence of panels.
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-29-1}
+
+\includegraphics[width=1.55\linewidth,height=\textheight,keepaspectratio]{img/sdu-total-by-month.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-30-1}
+
+Conceptually, a discrete sequence of 15-minute intervals over a day and
+a discrete sequence of months over a year a quite similar---just
+different intervals over different spans.
+
+Thus, we can switch the graphical roles of the two discrete time
+variables. We can use fiscal-year months for the horizontal scale of
+each panel and time of day to organize the sequence of panels.
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-31-1}
+
+\includegraphics[width=0.4\linewidth,height=\textheight,keepaspectratio]{img/sdu-hour-1-panel.png}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-32-1}
+
+\includegraphics[width=1.55\linewidth,height=\textheight,keepaspectratio]{img/sdu-elec-by-hour.png}
+
+\newthought{After we discuss these data,} write your thoughts in
+response to these prompts:
+
+\begin{itemize}
+\tightlist
+\item
+  What observations can you make?
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-33-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Both of the new charts (panels ordered by month and panels ordered by
+  hour) are certainly more compact than the 12 original charts in the
+  report appendix. Why do you think the authors presented the charts
+  they did?
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-34-1}
+
+\section{§ Advice from experts}\label{advice-from-experts}
+
+Match the expert to the advice.
+
+\newthought{Fill in the blanks} with letters A--D.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Expert & Letter & Emphasizes the importance of \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+& & \\
+A. Alberto Cairo & \_\_\_\_\_\_ & message \\
+& & \\
+B. Jean-luc Doumont & \_\_\_\_\_\_ & variables \\
+& & \\
+C. Stephanie Evergreen & \_\_\_\_\_\_ & revealing the complex \\
+& & \\
+D. Edward Tufte & \_\_\_\_\_\_ & knowing your main point \\
+& & \\
+& \_\_\_\_\_\_ & not lying to yourself \\
+& & \\
+\end{longtable}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-36-1}
+
+\section{Ideas to consider}\label{ideas-to-consider}
+
+\begin{itemize}
+\tightlist
+\item
+  Characterize the data structure and content
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-37-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Explore a story's context, causality, and complexity
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-38-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Align visual and verbal logic by revising iteratively
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-39-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Edit to suit the rhetorical goals for each audience
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-40-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Control every pixel---avoid thoughtless conformity
+\end{itemize}
+
+\includegraphics{effective-charts-handout-2026_files/figure-latex/unnamed-chunk-41-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Question are you seeing only what you want to believe?
+\end{itemize}
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Cairo:2019}
+Cairo, Alberto. 2019. \emph{{How Charts Lie}}. New York: {W.W. Norton}.
+
+\bibitem[\citeproctext]{ref-Clarke+etal:2021}
+Clarke, Steven, Michael Anderson, Daniela Aramayo, Dominic Molinari,
+Arthur Tseng, Zoe Warp, and John Ko. 2021. {``University of San Diego
+Energy Master Plan.''} Anaheim, CA: Willdan Energy Solutions.
+
+\bibitem[\citeproctext]{ref-Doumont:2009}
+Doumont, Jean-luc. 2009. \emph{{Trees, Maps, and Theorems}}. Belgium:
+{Principiae}.
+
+\bibitem[\citeproctext]{ref-Evergreen:2017}
+Evergreen, Stephanie D. H. 2017. \emph{{Effective Data Visualization}}.
+Thousand Oaks, CA: {Sage}.
+
+\bibitem[\citeproctext]{ref-Robbins:2013}
+Robbins, Naomi. 2013. \emph{{Creating More Effective Graphs}}. Wayne,
+NJ: {Chart House}.
+
+\bibitem[\citeproctext]{ref-Tufte:1983}
+Tufte, Edward. 1983. \emph{{The Visual Display of Quantitative
+Information}}. Cheshire, CT: {Graphics Press}.
+
+\bibitem[\citeproctext]{ref-WorldBank:2022}
+World Bank. 2022-01. {``{Population total for United States}.''}
+{Federal Reserve Bank of St. Louis}.
+\url{https://fred.stlouisfed.org/series/POPTOTUSA647NWDB}.
+
+\end{CSLReferences}
+
+
+
+\end{document}

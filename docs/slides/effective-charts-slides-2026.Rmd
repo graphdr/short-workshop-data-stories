@@ -39,7 +39,7 @@ class: right
 a <- image_read("slides/img/pie-preview.png")
 g <- image_read("slides/img/three-d-pie-preview.png")
 b <- image_read("slides/img/three-d-bar-preview.png")
-c <- image_read("slides/img/stacked-bar-03.png")
+c <- image_read("slides/img/sdu-energy-01.png")
 c <- image_colorize(c,  opacity = 25, color = "white")
 d <- image_read("slides/img/cairo-face.png")
 e <- image_read("slides/img/evergreen-face.png")
@@ -75,15 +75,15 @@ image_write(z,
 
 # version 2
 p <- image_read("slides/img/pie-preview.png")
-p <- image_scale(p, "x600")
+p <- image_scale(p       , "x600")
 q <- image_read("slides/img/three-d-bar-preview.png")
-q <- image_scale(q, "x600")
+q <- image_scale(q       , "x600")
 r <- image_append(c(p, q), stack = FALSE)
-r <- image_scale(r, std_width)
-r <- image_border(r, "white", border_dim)
+r <- image_scale(r       , std_width)
+r <- image_border(r      , "white", border_dim)
 s <- image_append(c(r, c), stack = TRUE)
 s <- image_append(c(s, d), stack = TRUE)
-s <- image_border(s, "white", "0x30")
+s <- image_border(s      , "white", "0x30")
 ```
 
 .left-column[
@@ -100,7 +100,7 @@ s <- image_border(s, "white", "0x30")
 
 <br>
 
-2024 Feb 13
+2026--02--10
 
 Richard Layton   
 
@@ -108,7 +108,7 @@ Richard Layton
 
 <br>
 
-<https://www.graphdoctor.com>
+<https://graphdr.github.io/data-stories/>
 
 <https://github.com/graphdr>
 
@@ -838,438 +838,185 @@ class:inverse, center, middle
 
 # Aligning the design to the story
 
-
-
-
-
-
-
-
+Iterative redesign to discover the stories in the data
 
 
 ---
 class: left
 
-# Visual grammar: charts encode information
-
-
-
-
-Surveys: “What was your reason for taking this postdoc?”
-
-
-<img src="img/stacked-bar-04.png" alt="stacked bar chart" height="275">
-
-```{r echo = FALSE}
-dt <- fread("data/fig2.csv")
-dt[reason %chin% "Postdoc generally expected for career in this field", 
-   reason := "Postdoc generally expected"]
-dt[reason %chin% "Additional training in PhD field", 
-   reason := "Additional training in field"]
-```
-
-```{r echo=FALSE, fig.asp=0.35, fig.width=14}
-p <- ggplot(dt, aes(x = year, y = pct, color = reason, fill = reason)) +
-  geom_bar(stat = "identity") + 
-  scale_color_brewer(palette="BrBG") + 
-  scale_fill_brewer(palette="BrBG") +
-  scale_x_continuous(breaks = seq(1996, 2010, 2), expand = c(0, 0)) +
-  theme_minimal() +
-  labs(y = "", x = "PhD completion year") +
-  theme(axis.text    = element_text(size = 24), 
-        axis.title.x = element_text(size = 24), 
-        legend.text  = element_text(size = 20), 
-        legend.title = element_blank(), 
-        legend.key.height = unit(15, "mm"))
-```
-
-
-
-Decode the *information* before discussing *meaning.* 
-
-Select one color. What *information* does the color encode? 
-
-
-
-
-
+![](img/redesign-01.png)
 
 <div class="my-footer">
 <span>
-Data source: Main, Joyce B., Yanbing Wang, and Li Tan (2021) “The career outlook of engineering PhDs” <em>J of Engineering Education</em> 110 (4): 977–1002.  
+Original design.
 </span>
-</div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 ---
 class: left
 
-# Visual rhetoric: charts convey meaning
-
-Surveys: “What was your reason for taking this postdoc?”
-
-<img src="img/stacked-bar-04.png" alt="stacked bar chart" height="275">
-
-Agreeing on what the information *is*, we can consider what it *means*. 
-
-*Meaning.* Describe a story (if any) this chart *conveys to you.*
-
-
-
+![](img/redesign-02.png)
 
 <div class="my-footer">
 <span>
-Data source: Main, Joyce B., Yanbing Wang, and Li Tan (2021) “The career outlook of engineering PhDs” <em>J of Engineering Education</em> 110 (4): 977–1002.  
+Original design.
 </span>
-</div> 
-
-
-
-
-
-
+</div>
 
 ---
 class: left
 
-# Visual grammar and visual rhetoric depend on the variables 
+![](img/redesign-03.png)
+
+<div class="my-footer">
+<span>
+Original design.
+</span>
+</div>
+
+---
+class: left
+
+![](img/redesign-04.png)
+
+<div class="my-footer">
+<span>
+Original design.
+</span>
+</div>
+
+---
+class: left
+
+![](img/redesign-01.png)
+
+<div class="my-footer">
+<span>
+Please respond to the prompts in the handout.
+</span>
+</div>
+
+---
+class: left
+
+![](img/redesign-05.png)
+
+<div class="my-footer">
+<span>
+Redesign 1: Small multiples. Please respond to the prompts in the handout.
+</span>
+</div>
+
+---
+class: left
+
+.left-column[
+<img src="img/redesign-06.png" alt="" style="width:160px;">
+]
+.right-column[
+]
+
+<div class="my-footer">
+<span>
+Redesign 2: Unstacking the stacked columns.
+</span>
+</div>
+
+---
+class: left
+
+![](img/redesign-07.png)
+
+<div class="my-footer">
+<span>
+Redesign 2: Unstacking the stacked columns. Please respond to the prompts in the handout.
+</span>
+</div>
+
+---
+class: left
+
+# Switching the roles of two discete-time variables
 
 .pull-left[
-<img src="img/variables-cycle.png" alt="cycle of research question, variables, chart design, and message" height="400">
+<img src="img/redesign-08.png" alt="" style="width:550px;">
 ]
-
-
 .pull-right[
-<br>
 
-- What is your question?
-
-- What variables are measured?
-
-- How are the variables classified?
-
-- What chart designs suit these variables?
-
-- What stories do the charts convey? 
-
-- How do the stories refine your questions? 
-
-- What new variables are needed? 
-
-- Repeat
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-class: left
-
-# What can we say about these variables?  
-
-Surveys: “What was your reason for taking this postdoc?”
-
-<img src="img/stacked-bar-04.png" alt="stacked bar chart" height="275">
-
-1. `______PhD completion year___________` is a *categorical* variable.
-
-2. `____________________________________` is a *categorical* variable
-
-3. `____________________________________` is the *quantitative* variable 
-
-4. `____________________________________` is the *independent* variable
-
-
-
-
-
-
----
-class: left
-
-# What can we say about these variables?  
-
-Surveys: “What was your reason for taking this postdoc?”
-
-<img src="img/stacked-bar-04.png" alt="stacked bar chart" height="275">
-
-1. `______PhD completion year___________` is a *categorical* variable.
-
-2. `______Postdoc reasons_______________` is a *categorical* variable
-
-3. `______Percent citing a reason_______` is the *quantitative* variable (one observation per reason per year)
-
-4. `______PhD completion year___________` is the *independent* variable
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-class: left
-
-# Time series? Use a line chart. 
-
-The original chart implies the data are a time series.  
-
-```{r echo=FALSE, fig.asp=0.4, fig.width=16} 
-ggplot(dt, aes(x = year, y = pct, color = reason)) +
-  geom_line(linetype = 2) +
-  geom_point(size = 4) +
-  labs(y = "Reason cited (%)", x = "PhD completion year") +
-  theme_graphclass(font_size = 20) +
-  scale_color_brewer(palette = "Dark2")
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-class: left
-
-# Time series? Use a line chart. 
-
-Un-clutter the display using one panel per reason
-
-```{r echo=FALSE, fig.asp=0.4, fig.width=13}
-ggplot(dt, aes(x = year, y = pct)) +
-  geom_line(linetype = 2) +
-  geom_point(size = 4) +
-  facet_wrap(vars(reorder(reason, pct, median)), as.table = FALSE) +
-  labs(y = "Reason cited (%)", x = "PhD completion year") +
-  theme_graphclass(font_size = 20)
-
-```
-
-
-*Meaning.* Describe a story (if any) this chart *conveys to you.*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-class: left
-
-# An unstated assumption underlies the visual muddle
-
-*Emphasizing the trivial* (Howard Wainer)
-
-- Poor choice of independent variable
-
-- Imposes a visual convention 
-
-
 
 <div class="my-footer">
 <span>
-Howard Wainer (1997) <em>Visual Revelations</em>, Lawrence Erlbaum Assoc., Mahwah, NJ, p. 30.  
+Redesign 3: Cycle chart
+</span>
+</div>
+
+---
+class: left
+
+# Switching the graphical roles of two discete-time variables
+
+.pull-left[
+<img src="img/redesign-08.png" alt="" style="width:550px;">
+]
+.pull-right[
+<img src="img/redesign-09.png" alt="" style="width:525px;">
+]
+
+<div class="my-footer">
+<span>
+Redesign 3: Cycle chart
+</span>
+</div>
+
+---
+class: left
+
+![](img/redesign-10.png)
+
+<div class="my-footer">
+<span>
+Redesign 3: Cycle chart. Please respond to the prompts in the handout.
+</span>
+</div>
+
+---
+class: left
+
+.pull-left[
+<img src="img/redesign-11.png" alt="" style="height:6.25in";>
+]
+.pull-right[
+
+]
+
+<div class="my-footer">
+<span>
+Redesign 4: Cycle chart in percentages.
+</span>
+</div>
+
+---
+class: left
+
+![](img/redesign-12.png)
+
+<div class="my-footer">
+<span>
+Redesign 4: Cycle chart in percentages. Please respond to the prompts in the handout.
 </span>
 </div>
 
 
 
-
---
-
-<br>
-Ignore time, the remaining variables are:
-
-- percent citing a reason (quantitative) distributed
-
-- reasons (categorical, 6 levels) 
-
-
-
-
---
-<br>
-A distributed quantity is displayed in a box-and-whisker plot
-
-.center[
-```{r echo=FALSE, fig.asp=0.15, fig.width=10}
-z <- copy(dt)
-z <- z[reason == "Work with a specific person or place"]
-ggplot(z, aes(x = pct, y = reason)) +
-  geom_boxplot(width = 0.5, 
-               outlier.size = 3, 
-               size = 1, 
-               fill = "white", 
-               color = rcb("dark_BG")) +
-  scale_x_continuous(limits = c(0, 40)) +
-  theme_void() +
-  annotate("text", 
-           size = 6, 
-           x = c(7.5, 17.5, 27.5, 32.5), 
-           y = c(1.03, 1.4, 1.03, 1.03), 
-           label = c("min", "median", "max", "outlier")
-           ) +
-    annotate("text", 
-           size = 6, 
-           x = c(11, 24, 15.5, 19), 
-           y = c(0.9, 0.9, 0.65, 0.65), 
-           label = "25%"
-           ) +
-  theme(text = element_text(size = 20))
-```
-]
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-class: left
+class:left
 
-# Distributions? Use a box-and-whisker plot.  
-
-Surveys: “What was your reason for taking this postdoc?”
-
-```{r echo=FALSE, fig.asp=0.35, fig.width=13}
-ggplot(dt, aes(x = pct, y = reorder(reason, pct, median))) +
-  geom_boxplot(width = 0.5, 
-               outlier.size = 3, 
-               size = 1, 
-               fill = rcb("light_BG"), 
-               color = rcb("dark_BG")) +
-  labs(y = "", x = "Percent selecting a reason (1995-2011)") +
-  theme_graphclass(font_size = 22)
-
-```
+# Impresssions
 
 <br>
 
-*Meaning.* Describe a story this chart *conveys to you.*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-class: left
-
-# Reflect on perception, reasoning, and credibility
-
-.left-column[
-Compare the stacked bar
-
-<img src="img/stacked-bar-03.png" alt="stacked bar preview">
-
-to the boxplot design. 
-
-<img src="img/boxplot-preview-2.png" alt="stacked bar preview">
-]
-
-.right-column[
-*Select any prompt.* Outline your response:  
-
-<br>
-
-- Compare designs: Quantitative data are *perceived* accurately.  
-
-<br>
-
-- Compare designs: *Reasoning* about the data is supported effectively. 
-
-<br>
-
-- Compare designs: An argument is given *credible* visual support. 
-]
+What do you consider to be the most important point?
 
 
 
@@ -1436,21 +1183,24 @@ class: left
 # Ideas to consider
 
 
-- **Characterize** the data structure and content 
+- *Know your data*. Characterize the number and type of variables. 
 
-- **Explore** a story's context, causality, and complexity
+- *What's the story?* Revise until you have aligned the logic of the chart with the logic of that story. 
 
-- **Align** visual and verbal logic by revising iteratively 
+- *Avoid lying to yourself*. Are you seeing only what you want to believe? 
 
-- **Edit** to suit the rhetorical goals for each audience  
+- *Compared to what?* Is there adequate context?
 
-- **Control** every pixel&mdash;avoid thoughtless conformity
+- *Find ways to reveal* (rather than dumbing down) complexity. 
 
-- **Question** are you seeing only what you want to believe?
+- *Expand your repertoire* of chart types. Avoid using a chart *only* because it's easy.
 
+- *Know your audience*. Edit your charts to meet their needs. 
 
-
+- *Control every pixel*. Default software settings are generally wrong. 
 
 
 ---
 class:inverse, center, middle
+
+
