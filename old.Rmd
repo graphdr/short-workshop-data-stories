@@ -5,9 +5,11 @@ description: |
   limitations and improve perception, reasoning, and credibility. 
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
 
 **Limitations of common graph types**
 
