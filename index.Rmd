@@ -1,54 +1,31 @@
 ---
-title: "Data stories workshop"
+title: "Creating effective charts"
 description: |
-  Visualizing quantitative data: what makes a chart effective?
-site: distill::distill_website
-bibliography: references.bib
-nocite: |
-  @Doumont:2009, @Kostelnick+Hassett:2003, @Tufte:1983, @Tufte:1997, @Wainer:1997, @Cairo:2019, @Cleveland:1993, @Robbins:2013, @Wainer:2014
+  Limitations of common graph types. Demonstrating how to avoid   
+  limitations and improve perception, reasoning, and credibility. 
 ---
 
-## Welcome
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
-In this workshop, we introduce a few basic ideas on creating effective charts of quantitative data.  
+**Limitations of common graph types**
 
-For most of us, our education entailed years of training and practice using the tools of effective written and spoken communication, what we might term *verbal* rhetoric. Yet very few of us experience anywhere near as thorough a grounding in the tools of effective graphical communication, or *visual* rhetoric.  
+We demonstrate the perceptual limitations of common graph types and suggest more effective alternatives. 
 
-This helps explain why folks who may be perfectly competent otherwise can uncritically produce ghastly charts such as the "solar output profile" chart below. 
+<img src="images/stacked-bar-preview.png" alt="stacked-bar chart" style="width:300px">
 
-![Figure 1:  Example of an ineffective chart. Even if you take the time to understand what the chart purports to show, there is no compelling message for the audience to take away. Source: @Clarke+etal:2021](images/solar-output.png){width=100%}
+The rationale behind alternative designs is illustrated with the goals of 
+  
+- Improving perception of stories in the data
+- Making it easier to reason quantitatively about the data
+- Enhancing our credibility with the audience
 
-By the end of the workshop you should be able to 
+**Materials**
 
-- Describe limitations of common graph types
-- Describe a graph type you had not encountered before 
-- Explain how you might begin to think critically about visual information 
-
-
-
-
-
-
-## Blogs to browse {.appendix}
-
-[The Functional Art](http://www.thefunctionalart.com/), Alberto Cairo    
-[Evergreen Data](https://stephanieevergreen.com/blog/), Stephanie Evergreen    
-[Visual Business Intelligence](https://www.perceptualedge.com/blog/), Stephen Few    
-[Storytelling with Data](https://www.storytellingwithdata.com/blog), Cole Nussbaumer Knaflic and team   
+- [worksheets](slides/handouts-day1-01.pdf)  I suggest you have a printed copy of these worksheets to write in during the workshop. We have a number of think-write-share activities that for many people work best in writing. 
 
 
-
-## Acknowledgments {.appendix}
-
-**R package authors**    
-[`data.table`](https://CRAN.R-project.org/package=data.table) Fast aggregation of large data, Matt Dowle and Arun Srinivasan    
-[`ggplot2`](https://CRAN.R-project.org/package=ggplot2) Elegant data visualizations using the grammar of graphics, Hadley Wickham, Winston Chang, et al.   
-[`distill`](https://CRAN.R-project.org/package=distill), Scientific and technical article format for the web, JJ Allaire, Rich Iannone, et al.    
-[`xaringan`](https://CRAN.R-project.org/package=xaringan) Create HTML5 slides with R Markdown, Yihui Xie       
+- [slides](slides/effective-charts-slides-2026.html) used during the workshop. 
 
 
-
-
-
-
- 
