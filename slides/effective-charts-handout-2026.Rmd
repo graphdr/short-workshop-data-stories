@@ -1,0 +1,559 @@
+---
+title:  "Creating more effective charts"
+runningheader: "More effective charts" # only for pdf output
+author: "Richard Layton"
+date: "2026--02--10"
+output:
+  tufte::tufte_handout:
+    citation_package: default
+    latex_engine: pdflatex
+bibliography: ../references.bib
+link-citations: yes 
+nocite: |
+  @Robbins:2013, @Cairo:2019, @Doumont:2009, @Evergreen:2017, 
+  @Tufte:1983, @WorldBank:2022, @Clarke+etal:2021
+---
+
+```{marginfigure, echo=TRUE}
+*Richard Layton* resides online at  
+
+- <https://www.graphdoctor.com>    
+- <https://github.com/graphdr>    
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_knit$set(root.dir = "../")
+
+library(data.table)
+library(ggplot2)
+library(knitr)
+library(graphclassmate)
+library(magick)
+library(docxtools)
+
+library(tufte)
+library(tufterhandout)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+# Perception, reasoning, and credibility 
+
+
+```{marginfigure, echo=TRUE}
+_Creating More Effective Graphs_ by Naomi Robbins (2013) inspired the session title and Chapter 2, "Limitations of some common graphs," inspired our exercises.
+```
+
+
+
+
+
+
+![](img/handout-day1-outline-2024.png){width="75%"}
+
+```{r fig.height = 0.05}
+put_gap()
+```
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Effective alternatives to pie charts
+
+
+
+
+
+
+
+
+## Judging pie slices is a low-accuracy task
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-01-01-v2.png){width="150%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+Data source: World Bank (2022)
+```
+
+
+
+
+## Judging values along a common axis is a high-accuracy task
+
+```{marginfigure, echo = TRUE}
+![](img/pie-preview.png){width="50%"}    
+```
+`r margin_note("The data from the pie chart is shown below as dots along a common scale.")`
+
+- The new chart displays the same data 
+
+- *Visually estimate* the percentages using the new chart
+
+- Fill-in the blanks in the table
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-01-02.png){width="150%"}
+
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+## 3D effects distort our judgment even further
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-01-03-v2.png){width="150%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+Data source: World Bank (2022)
+```
+
+
+
+
+
+
+
+
+## Again, a common scale improves our visual judgments
+
+```{marginfigure, echo = TRUE}
+![](img/three-d-pie-preview.png){width="50%"}    
+```
+`r margin_note("The data from the pie chart is shown below as dots along a common scale.")`
+
+- The new chart displays the same data 
+
+- *Visually estimate* the percentages using the new chart
+
+- Fill-in the blanks in the table
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-01-04.png){width="150%"}
+
+```{r fig.height = 0.6}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Effective alternatives to bar charts 
+
+
+
+
+
+
+
+
+## 3D effects always distort our judgment
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-01-05-v2.png){width="150%"}
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+Data source: World Bank (2022)
+```
+
+
+
+
+
+
+
+
+
+## Same data---without 3D effects---along a common scale
+
+```{marginfigure, echo = TRUE}
+![](img/three-d-bar-preview.png){width="50%"}    
+```
+`r margin_note("The data from the 3D bar chart is shown below as dots along a common scale.")`
+
+- The new chart displays the same data
+
+- Visually estimate the percentages using the new chart
+
+- Fill-in the blanks in the table
+
+![](img/handout-01-06.png){width="150%"}
+
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+## With a zero baseline and no 3D effects, bars are OK
+
+- Zero baseline avoids deception
+
+- Ordered by data values
+
+- Only the endpoint encodes information
+
+## Consider dot charts for
+
+- Visually comparing quantities 
+
+- Replacing most pie and bar charts 
+
+
+```{marginfigure, echo=TRUE}
+Default bar chart:
+![](img/handout-01-08.png)
+Ordered by magnitude:
+![](img/handout-01-09.png)
+Omitting the fill color:
+![](img/handout-01-10.png)
+Produces a dot chart:
+![](img/handout-01-11.png)
+```
+
+
+## Notes
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Aligning the design to the story
+
+
+Redesigning a chart to find what stories might be in the data 
+
+`r newthought("The appendix of the USD energy report")` includes this stacked-column chart. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-energy-00.png){width="155%"}
+
+`r newthought("After we discuss these data,")` write your thoughts in response to these prompts:
+
+- What does the chart show clearly?
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- What does the chart not show clearly?
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+
+- Describe the problems faced by a reader trying to compare and contrast trends over 12 months (12 charts like this one). 
+
+
+
+
+## Redesign
+
+In this multi-faceted chart, we can see the trends for each of the three demand sources independently of one another, plus the total in the top row, spanning the full year. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-elec-by-month.png){width="155%"}
+
+`r newthought("After we discuss these data,")` write your thoughts in response to these prompts:
+
+- What observations (even obvious ones) can you make? 
+
+```{r fig.height = 0.8}
+put_gap()
+```
+
+- What attributes of this design, compared to the original stacked-bar chart, *help the reader* to find stories in the data?   
+
+
+```{r fig.height = 0.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## A second redesign
+
+Electrical power is recorded on the peak demand day in each month. The three measured quantities (solar, fuel cell, and metered kW) are dependent on two discrete time variables. 
+
+month 
+
+: of the fiscal year, from July 2018 to June 2019
+
+time of day
+
+: in 15-minute discrete intervals from 12:15 am to the following midnight (or, using a 24 hour clock, from 0015 hours to 2400 hours).
+
+
+In the previous design, we used time of day for the horizontal scale of each panel and month to organize the sequence of panels. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-total-by-month.png){width="155%"}
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+
+Conceptually, a discrete sequence of 15-minute intervals over a day and a discrete sequence of months over a year a quite similar---just different intervals over different spans. 
+
+Thus, we can switch the graphical roles of the two discrete time variables. We can use fiscal-year months for the horizontal scale of each panel and time of day to organize the sequence of panels.  
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-hour-1-panel.png){width="40%"}
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-elec-by-hour.png){width="155%"}
+
+`r newthought("After we discuss these data,")` write your thoughts in response to these prompts:
+
+- What observations can you make? 
+
+```{r fig.height = 1.5}
+put_gap()
+```
+
+- Both of the new charts (panels ordered by month and panels ordered by hour) are certainly more compact than the 12 original charts in the report appendix. Why do you think the authors presented the charts they did?   
+
+```{r fig.height = 0.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Advice from experts
+
+Match the expert to the advice. 
+
+`r newthought("Fill in the blanks")` with letters A--D. 
+
+```{r}
+x <- wrapr::build_frame(
+  "Expert", "Letter", "Emphasizes the importance of"|
+  " ", " ", " "|
+  "A. Alberto Cairo"      , "______" , "message"|
+  " ", " ", " "|
+    
+  "B. Jean-luc Doumont"   , "______" , "variables"|
+  " ", " ", " "|
+    
+  "C. Stephanie Evergreen", "______" , "revealing the complex"|
+    " ", " ", " "|
+    
+  "D. Edward Tufte"       , "______" , "knowing your main point"|
+  " ", " ", " "|
+    
+  " "                     , "______" , "not lying to yourself"|
+    
+  " ", " ", " ")
+
+knitr::kable(x)
+```
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+
+
+
+
+
+
+# Ideas to consider
+
+- Characterize the data structure and content
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+- Explore a story's context, causality, and complexity
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+- Align visual and verbal logic by revising iteratively
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+- Edit to suit the rhetorical goals for each audience
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+- Control every pixel---avoid thoughtless conformity
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+- Question are you seeing only what you want to believe?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# References
+
+
+

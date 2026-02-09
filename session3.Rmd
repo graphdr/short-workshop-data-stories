@@ -1,0 +1,21 @@
+---
+title: "Session 3"
+description: |
+  Critical thinking about visual information&mdash;a case study. 
+  Detecting and correcting deliberate visual lies that attempt 
+  to restrict reproductive rights. 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Critical thinking about visual information&mdash;a case study** 
+
+In the third session we study the visual rhetoric of a deliberate visual lie in the pursuit of restricting reproductive rights. We focus on 
+
+- How the authors abuse the conventions of visual rhetoric to serve their rhetorical goals  
+- What legitimate stories these data tell
+- What legitimate questions the data raise 
+
+[[**slides**]]() in progress

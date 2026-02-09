@@ -1,0 +1,474 @@
+---
+title:  "Expanding your graphical repertoire"
+runningheader: "Graphical repertoire" # only for pdf output
+author: "Richard Layton"
+date: "2024--02-13"
+output:
+  tufte::tufte_handout:
+    citation_package: default
+    latex_engine: pdflatex
+bibliography: ../references.bib
+link-citations: yes 
+nocite: |
+  @Doumont:2009, @Newfield:2021, @NASA+Snow+Ice:2017, @R-GDAdata:2015
+---
+
+```{marginfigure, echo=TRUE}
+*Richard Layton* resides online at 
+
+- <https://www.graphdoctor.com>    
+- <https://github.com/graphdr>    
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_knit$set(root.dir = "../")
+
+library(data.table)
+library(ggplot2)
+library(knitr)
+library(graphclassmate)
+library(magick)
+library(docxtools)
+
+library(tufte)
+library(tufterhandout)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+
+options(
+  datatable.print.nrows = 16,
+  datatable.print.topn = 6,
+  datatable.print.class = TRUE
+)
+```
+
+
+```{r fig.height = 0.1}
+put_gap()
+```
+
+
+# Variables, design, message
+
+```{marginfigure, echo=TRUE}
+_Trees, Maps, and Theorems_ by Jean-luc Doumont (2009) inspired the four main topics. 
+```
+
+![](img/day2-cover-preview-2.png){width="70%"}
+
+```{r fig.height = 2.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+# slide index
+ii = 3
+```
+
+# `r "\U00A7"` Comparing data
+
+## [`r ii = ii + 1; ii`] Data
+
+```{marginfigure, echo=TRUE}
+Square brackets *[i]*  give the slide number. 
+```
+
+Representation at graduation in 3 engineering programs, 19 US institutions, 1987--2018
+
+```{r}
+#| comment: NULL
+dt <- fread("data/session-2-compare-repr-at-grad.csv")
+dt[]
+```
+
+## [`r ii = ii + 1; ii`] Dot chart
+
+![](../results/day-2-compare-01.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Add a second category
+
+![](../results/day-2-compare-02.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Exchange mapping of categorical variables
+
+![](../results/day-2-compare-03.png){width="140%"}
+
+
+
+
+
+
+
+
+
+
+
+## [`r ii = ii + 1; ii`] Logarithmic scale for orders of magnitude differences
+
+![](../results/day-2-compare-04.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] One program per facet
+
+![](../results/day-2-compare-05.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Add a third category 
+
+![](../results/day-2-compare-06.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Combine categories
+
+![](../results/day-2-compare-07.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Discussion: Comparing data
+
+What points seem most important to you so far?
+
+```{r fig.height=0.5}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+![](img/variables-cycle.png)
+```
+
+
+
+
+
+# `r "\U00A7"` Revealing correlations
+
+## [`r ii = ii + 2; ii`] Data
+
+Engineering students at 14 institutions persisting to year 4 and graduating by year 6, 1987-2019
+
+```{r}
+#| comment: NULL
+options(
+  datatable.print.nrows = 6,
+  datatable.print.topn = 3
+)
+dt <- fread("data/four-year-six-year.csv")
+dt[]
+```
+
+## [`r ii = ii + 1; ii`] Scatterplots are designed to reveal correlation
+
+![](../results/day-2-correlation-01.png){width="51%"}
+
+## [`r ii = ii + 1; ii`] Add a category
+
+![](../results/day-2-correlation-02.png){width="51%"}
+
+
+
+
+
+
+
+## [`r ii = ii + 1; ii`] One facet per sex
+
+![](../results/day-2-correlation-03.png){width="120%"}
+
+```{r fig.height=1}
+put_gap()
+```
+
+## [`r ii = ii + 1; ii`] One facet per institution
+
+![](../results/day-2-correlation-04.png){width="150%"}
+
+```{r fig.height=1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+## [`r ii = ii + 1; ii`] Change the quantitative variable
+
+Engineering students at 14 institutions persisting to year 4 and graduating by year 6, 1987--2019
+
+```{r fig.height=0.2}
+put_gap()
+```
+
+![](../results/day-2-correlation-05.png){width="130%"}
+
+```{r fig.height=0.5}
+put_gap()
+```
+
+## [`r ii = ii + 1; ii`] Discussion: Revealing correlations
+
+- We saw a correlation.
+
+- We changed the emphasis.
+
+- Which chart tells a more compelling story?
+
+```{marginfigure, echo=TRUE}
+![](img/variables-cycle.png)
+```
+
+```{r fig.height=2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Showing evolution
+
+## [`r ii = ii + 2; ii`] Data
+
+University of California: funding and percent White enrollment, 1999--2017
+
+```{r}
+#| comment: NULL
+options(
+  datatable.print.nrows = 10,
+  datatable.print.topn = 3
+)
+
+# read from the blog data directory
+dt <- fread("data/budget-justice.csv", 
+            colClasses = list(double = c("year", "white_pct")))
+
+# add governor names
+dt[, gov := fcase(
+  year < 2004, "Davis", 
+  year >= 2004 & year < 2011, "Schwarzenegger", 
+  year >= 2011, "Brown")]
+setcolorder(dt, c("year", "gov"))
+setnames(dt, 
+         old = c("year", "gov", "white_pct", "fund_frac"), 
+         new = c("Year", "Governor", "Pct_UG_White", "Funding_metric"))
+dt[]
+```
+
+
+
+## [`r ii = ii + 1; ii`] Two time series
+
+![](../results/day-2-evolution-01.png){width="130%"}
+
+## [`r ii = ii + 1; ii`] Indexed time series
+
+![](../results/day-2-evolution-02.png){width="130%"}
+
+## [`r ii = ii + 1; ii`] Parallel lines indicate possible correlation
+
+![](../results/day-2-evolution-03.png){width="130%"}
+
+## [`r ii = ii + 1; ii`] Connected scatterplot
+
+![](../results/day-2-evolution-04.png){width="130%"}
+
+## [`r ii = ii + 1; ii`] Data     
+
+Extent of polar ice (millions sq km) 1979--2021
+
+```{r}
+#| comment: NULL
+dt <- readRDS("data/time-series-cyclic.rds")
+dt <- data.table(dt)
+setcolorder(dt, c("hemis", "month", "year"))
+dt[]
+```
+
+## [`r ii = ii + 1; ii`] Cyclic time series
+
+![](../results/day-2-evolution-05.png){width="150%"}
+
+## [`r ii = ii + 1; ii`] Add a category
+
+![](../results/day-2-evolution-06.png){width="150%"}
+
+
+
+
+
+
+
+
+
+
+## [`r ii = ii + 1; ii`] Discussion: Showing evolution
+
+- Which time series chart design might be used in your own work? 
+
+- Explain.
+
+```{marginfigure, echo=TRUE}
+![](img/variables-cycle.png)
+```
+
+```{r fig.height=1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Displaying distributions
+
+## [`r ii = ii + 2; ii`] Data 
+
+World speed skiing (km/hr) competitions  1953--1995
+
+```{r}
+#| comment: NULL
+#| echo: false
+
+options(
+  datatable.print.nrows = 10,
+  datatable.print.topn = 4
+)
+
+library("GDAdata")
+x <- data.table(SpeedSki)
+x <- x[, .(Year, Speed, Sex, Event)]
+setcolorder(x, c("Event", "Year", "Sex"))
+setkeyv(x, c("Event", "Year", "Sex"))
+x[]
+```
+
+## [`r ii = ii + 1; ii`] Strip chart
+
+![](../results/day-2-distributions-01.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Add a category
+
+![](../results/day-2-distributions-02.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Add a second category
+
+![](../results/day-2-distributions-03.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Data
+
+MIDFIELD graduates (N = 270k), enrolled in Engineering, excluding 10th and 90th quantiles
+
+```{r}
+#| comment: NULL
+dt <- readRDS("data/boxplot-merge-category.rds")
+dt[, sex := ifelse(sex_path %ilike% "female", "Female", "Male")]
+dt <- dt[, .(path, sex, enrolled)]
+setnames(dt, old = c("enrolled"), new = c("years_to_grad"))
+setkeyv(dt, c("path", "sex"))
+dt[]
+```
+
+## [`r ii = ii + 1; ii`] Box and whisker chart
+
+![](../results/day-2-distributions-04.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Add a category
+
+![](../results/day-2-distributions-05.png){width="140%"}
+
+## [`r ii = ii + 1; ii`] Combine a second category
+
+![](../results/day-2-distributions-06.png){width="140%"}
+
+
+
+
+
+
+
+
+
+## [`r ii = ii + 1; ii`] Discussion: Displaying distributions
+
+What MIDFIELD distributions would you like to see:
+
+- what quantitative variable?
+
+- what categorical variables?
+
+```{marginfigure, echo=TRUE}
+![](img/variables-cycle.png)
+```
+
+```{r fig.height=2.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Closing discussion 
+
+## [`r ii = ii + 2; ii`] Variables, design, message 
+
+- For you, what was the muddiest point in the session? 
+
+```{r fig.height=1}
+put_gap()
+```
+
+- Is there a graph design you would have liked to have seen today? 
+
+```{r fig.height=1}
+put_gap()
+```
+
+- Is there a class of variables you would have liked to have seen today? 
+
+
+
+
+# References

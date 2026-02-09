@@ -1,0 +1,11 @@
+---
+title: "License"
+description: |
+  For text, images, code, and data.
+---
+
+The following licenses apply to the text, images, code, and data in this website.  My goal is to minimize legal encumbrances to the dissemination, sharing, use, and re-use of this work. However, the existing rights of authors whose work is cited are reserved to those authors.
+
+- [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) for my text and images  
+- [GPL-3](https://www.r-project.org/Licenses/GPL-3) for my code  
+- [CC0](https://wiki.creativecommons.org/wiki/CC0_use_for_data) for data  

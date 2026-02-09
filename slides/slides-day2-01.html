@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Expanding your graphical repertoire</title>
+    <meta charset="utf-8" />
+    <meta name="date" content="2022-02-21" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury-fonts.css" rel="stylesheet" />
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: right
+
+
+
+
+.left-column[
+&lt;img src="img/test-composite.png"&gt;
+]
+
+# Expanding your graphical repertoire
+
+###  Variables + Argument &amp;#x2192; Design
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+Richard Layton   
+
+2022-02-14
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;https://graphdr.github.io/data-stories/&gt;
+
+&lt;https://github.com/graphdr&gt;
+
+&lt;a href="mailto:graphdoctor@gmail.com"&gt;graphdoctor@gmail.com&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+.left-column[
+&lt;img src="img/test-composite.png"&gt;
+]
+
+#### `\(\quad\)`
+
+#### `\(\quad\)` Comparing data
+
+#### `\(\quad\)`
+
+&lt;br&gt;
+
+#### `\(\quad\)` Revealing correlations
+
+#### `\(\quad\)`
+
+&lt;br&gt;
+
+#### `\(\quad\)` Showing evolution
+
+#### `\(\quad\)`
+
+&lt;br&gt;
+
+#### `\(\quad\)` Displaying distributions
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Optimal design categories from: Jean-luc Doumont (2009) &lt;em&gt;Trees, Maps and Theorems&lt;/em&gt;, Principiae, p. 133.
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Comparing data
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Dot chart
+
+Good substitute for pie charts or bar charts. 
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; infant mortality &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; age of mother &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 6 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- category (age) levels on rows    
+
+- quantities along common horizontal scale
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: US Centers for Disease Control and Prevention  
+&lt;a href="https://wonder.cdc.gov/lbd-current.html"&gt;CDC WONDER Linked Birth / Infant Death Records&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Dot chart, superposed
+
+Subset by a second category.  
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; infant mortality &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; age of mother &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 6 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; race/ethnicity &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- category 1 (age) levels on rows
+
+- category 2 (race/ethnicity) color-coded
+
+- quantities along common horizontal scale
+]
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: US Centers for Disease Control and Prevention  
+&lt;a href="https://wonder.cdc.gov/lbd-current.html"&gt;CDC WONDER Linked Birth / Infant Death Records&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Multiway dot chart
+
+Same data. Change superposed design to a faceted design. 
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; infant mortality &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; age of mother &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 6 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; race/ethnicity &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+- category 1 (age) levels on rows
+
+- category 2 (race/ethnicity) levels on panels
+
+- quantities along identical scales
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: US Centers for Disease Control and Prevention  
+&lt;a href="https://wonder.cdc.gov/lbd-current.html"&gt;CDC WONDER Linked Birth / Infant Death Records&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Multiway dot chart
+
+Changing one category changes the number of facets. 
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+.left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; infant mortality &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; age of mother &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 6 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; US region &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+].pull-right[
+- Rows ordered by age. 
+
+- Facets ordered by median value. 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: US Centers for Disease Control and Prevention  
+&lt;a href="https://wonder.cdc.gov/lbd-current.html"&gt;CDC WONDER Linked Birth / Infant Death Records&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Multiway dot chart
+
+Same data. Switching facets and rows yields a different view of the data.  
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+.left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; infant mortality &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; age of mother &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 6 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; US region &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Rows ordered by the median value.    
+
+- Facets ordered by age. 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: US Centers for Disease Control and Prevention  
+&lt;a href="https://wonder.cdc.gov/lbd-current.html"&gt;CDC WONDER Linked Birth / Infant Death Records&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Multiway dot chart, superposed
+
+Subset further by superposing a new category&amp;mdash;for a total of 4 variables.   
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+
+.left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; infant mortality &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; age of mother &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 6 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; US region &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; race/ethnicity &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.pull-right[
+- Direct labeling eliminates the legend. 
+
+- Color palette safe for color-vision-deficient viewers.
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: US Centers for Disease Control and Prevention  
+&lt;a href="https://wonder.cdc.gov/lbd-current.html"&gt;CDC WONDER Linked Birth / Infant Death Records&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Revealing correlations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Scatterplot
+
+Designed to reveal correlations between two quantitative variables.
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectancy &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; GDP per capita &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+"International dollar" is a hypothetical currency with the same *purchasing power parity* (PPP) as constant US dollars (here, the basis is 2011).
+
+In thousands: "kIntl$"
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+#  Scatterplot, superposed
+
+Subset by a categorical variable, "Global region".
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-17-1.png)&lt;!-- --&gt;
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectancy &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; GDP per capita &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; global region &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- Works best when clusters of subsets are distinct.
+
+- Requires a legend if data cannot be directly labeled. 
+]
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+#  Scatterplot, faceted
+
+Same three variables with "Global region" levels in 4 facets. 
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
+
+- A legend and color are no longer needed. 
+
+- Facets are ordered by median life expectancy in "graph order."
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+#  Scatterplot, faceted
+
+Same three variables with "Global region" levels in 8 facets.
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-21-1.png)&lt;!-- --&gt;
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Showing evolution
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Time series
+
+A sequence of discrete-time data, often equally-spaced. Time is the independent variable. 
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectancy &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- Discrete time (e.g., months or years) is a categorical, not quantitative, variable.
+
+- Dots connected by a dashed line if the points are far apart.  
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Time series
+
+A sequence of discrete-time data, often equally-spaced. Time is the independent variable. 
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectancy &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- If the dots are close together, ... 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Time series
+
+A sequence of discrete-time data, often equally-spaced. Time is the independent variable. 
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectancy &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- If the dots are close together, ...    
+
+  a solid line is often used. 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Time series, superposed
+
+Time series conditioned by a categorical variable, with all lines in the same facet.
+
+.pull-left[
+![](slides-day2-01_files/figure-html/unnamed-chunk-28-1.png)&lt;!-- --&gt;
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectancy &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; country &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+- Color is often used to distinguish superposed category levels.   
+
+- Use colors safe for viewers with color-vision-deficiency
+
+- Labels eliminate the need for a legend. 
+
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+---
+class: left
+
+#  Time series, faceted 
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
+
+.left-column[
+Same data in faceted design.
+]
+.right-column[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectency &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; country &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+#  Connected scatterplot, faceted
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-32-1.png)&lt;!-- --&gt;
+
+
+.left-column[
+Scatterplot with adjacent points in time connected
+]
+.right-column[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; life expectency &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; GDP per capita &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; country &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source:  
+&lt;a href="https://www.gapminder.org/data/"&gt;Gapminder Foundation&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:left
+
+# Cyclic time series
+
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-34-1.png)&lt;!-- --&gt;
+
+.left-column[
+Showing the behavior of cyclic sub-series.
+]
+.right-column[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; ice extent &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 43 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; month &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 12 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: NASA National Snow and Ice Data Center  
+&lt;a href="https://nsidc.org/arcticseaicenews/sea-ice-tools/"&gt;Sea ice extent and area organized by year&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+---
+class:left
+
+# Cyclic time series, superposed
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-36-1.png)&lt;!-- --&gt;
+.left-column[
+Adding *hemisphere* as a categorical variable. 
+]
+.right-column[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; ice extent &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 43 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; month &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, ordinal, 12 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; hemisphere &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: NASA National Snow and Ice Data Center  
+&lt;a href="https://nsidc.org/arcticseaicenews/sea-ice-tools/"&gt;Sea ice extent and area organized by year&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Displaying distributions
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Strip chart
+
+Designed to display the distribution of a single quantitative variable.
+
+&lt;br&gt;
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-39-1.png)&lt;!-- --&gt;
+
+&lt;br&gt;
+
+.pull-left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; speed &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Designed to show all data values
+
+- Data markers "jittered" to mitigate overprinting
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: 2011 World speed skiing competition, in the
+&lt;a href="https://CRAN.R-project.org/package=GDAdata"&gt;GDAdata&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Strip chart
+
+Subset by a category and distinguish levels by row.  
+
+&lt;br&gt;
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
+
+.pull-left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; speed &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; event &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 3 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Rows ordered by median value
+
+- Common horizontal scale 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: 2011 World speed skiing competition, in the
+&lt;a href="https://CRAN.R-project.org/package=GDAdata"&gt;GDAdata&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Strip chart, superposed
+
+Subset by another category and distinguish levels color-coded. 
+
+&lt;br&gt;
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-43-1.png)&lt;!-- --&gt;
+
+.pull-left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; speed &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; event &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 3 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; sex &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Direct labeling eliminates the legend
+
+- Colors safe for color-vision-deficient viewers 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: 2011 World speed skiing competition, in the
+&lt;a href="https://CRAN.R-project.org/package=GDAdata"&gt;GDAdata&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Box and whisker chart
+
+Designed to summarize the distribution of a single quantitative variable.
+
+&lt;br&gt;
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-45-1.png)&lt;!-- --&gt;
+
+&lt;br&gt;
+
+.pull-left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; years &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Shows a 5-point summary of distributions 
+
+- Useful when too much data for a strip chart 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: MIDFIELD subset from the 
+&lt;a href="https://github.com/graphdr/graphclassmate"&gt;graphclassmate&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Box and whisker chart
+
+Subset by a category and distinguish levels by row.
+
+&lt;br&gt;
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-47-1.png)&lt;!-- --&gt;
+
+&lt;br&gt;
+
+.pull-left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; years &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; group &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Convention "up" is "better", so row medians decrease from bottom to top
+
+- Outliers omitted 
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: MIDFIELD subset from the 
+&lt;a href="https://github.com/graphdr/graphclassmate"&gt;graphclassmate&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Box and whisker chart
+
+Merge two categories (path and sex) into a new "Group" category
+
+&lt;br&gt;
+
+![](slides-day2-01_files/figure-html/unnamed-chunk-49-1.png)&lt;!-- --&gt;
+
+  
+&lt;br&gt;
+
+.pull-left[
+&lt;table class="table" style="font-size: 18px; float: left; margin-right: 10px;"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; "&gt;Variables&lt;/div&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; years &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; group &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 4 levels &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; path &lt;/td&gt;
+   &lt;td style="text-align:left;background-color: white !important;"&gt; categorical, nominal, 2 levels &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+.pull-right[
+- Direct comparison easier without facets
+
+- Color encodes the "path" category
+]
+
+
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: MIDFIELD subset from the 
+&lt;a href="https://github.com/graphdr/graphclassmate"&gt;graphclassmate&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Summary
+
+## Chart design and rhetorical considerations
+
+
+
+
+
+
+---
+class: left
+
+# Chart design
+
+.pull-left[
+**Chart selection** 
+
+- What are your variables, by name?
+
+- Is a variable quantitative or categorical?
+
+- Is a categorical variable naturally ordered (ordinal) or not (nominal)?
+
+- Starting with a small number of variables, what chart types match the data structure? 
+
+- How does the chart type change as you add new variables?
+]
+.pull-right[
+**Chart aesthetics**
+
+- Superposed designs work best with small numbers of subsets or when the subsets visually cluster. 
+
+- Faceted designs permit a greater number of subsets to be compared. 
+
+- Deliberately assign the size, shape, and color of every visual element.  
+
+- Use color deliberately. Choose colors that are safe for color-vision-deficient viewers.
+]
+
+
+
+
+
+
+
+---
+class: left
+
+# Rhetorical considerations
+
+.pull-left[
+**Audience and message** 
+
+- What is your story?
+
+- Does the visual evidence directly support your verbal argument? 
+
+- Have you placed the story in context visually? 
+
+- Who is your audience? 
+
+- Will the audience resist your conventions? 
+
+- If so, is overcoming audience resistance worth the effort? 
+]
+.pull-right[
+**Ethics of visual rhetoric** 
+
+- Is your design equitable and inclusive? 
+
+- Are you seeing only what you want to see? What the audience wants to see? 
+
+- All there alternative explanations for what the chart shows? 
+
+- Are your data dubious? Insufficient?
+
+- Have you concealed information? Concealed a large uncertainty? 
+
+- Does your chart suggest misleading patterns? 
+]
+
+
+
+
+---
+class:inverse, center, middle
+
+# Appendix
+
+## When you have more variables 
+
+
+
+
+
+
+---
+class: left
+
+
+# When you have more variables, look for appropriate designs 
+
+### Our examples have used a limited number of variables
+
+- 2 quantitative variables or less
+
+- 3 categorical variables or less
+
+
+### Expanding your multivariate graphical repertoire
+
+- scatterplot matrix
+
+- co-plot  
+
+- open-high-low-close (OHLC) chart
+
+- parallel coordinate chart
+
+- survey stacked-bar  chart
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Scatterplot matrix
+
+A grid of scatterplots showing the bivariate relationships between all pairs of variables.   
+
+.pull-left[
+Designed for datasets with a large number of quantitative variables. 
+
+Density plots (one per variable) on the diagonal. 
+
+Pearson correlation coefficients for each pair in the upper triangle.  
+
+Example: banknote dimensions, 100 each genuine and counterfeit 
+
+- 6 quantities    
+- 1 category
+
+]
+.pull-right[
+&lt;img src="img/scatterplot-matrix-example.png" style="height:425px"&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Data source: &lt;em&gt;bank&lt;/em&gt; dataset included with the &lt;a href="https://CRAN.R-project.org/package=gclus"&gt;gclus&lt;/a&gt; R package
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Conditioning plot (co-plot)
+
+A grid of scatterplots of two quantities that depend on ranges of one or two additional quantities. 
+
+  
+.pull-left[
+Designed for datasets with 3 or 4 quantitative variables. 
+
+The ranges of the conditioning variables are shown in panels adjacent to the main grid. 
+
+Example: air quality measurements
+
+- 4 quantities 
+
+
+]
+.pull-right[
+&lt;img src="img/conditioning-plot-example.png" style="height:425px"&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Data source: &lt;em&gt;airquality&lt;/em&gt; dataset included in the &lt;a href="https://cran.r-project.org/"&gt;base R&lt;/a&gt; installation
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Open-high-low-close (OHLC) chart
+
+Time series of market prices.  
+  
+.left-column[
+Color can indicate levels of a category: 
+
+- close &gt; open (green)
+- close &lt; open (red)
+
+
+Example
+
+- 4 quantities
+- 2 categories
+
+]
+.right-column[
+&lt;img src="img/financial-ohlc-example.png" style="height:425px"&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Image from: &lt;a href="https://datavizcatalogue.com/methods/OHLC_chart.html"&gt;
+The data visualization Decalogue&lt;/a &gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Parallel coordinate chart
+
+Each variable has its own vertical axis (usually scaled min to max). Each observation is a line. 
+
+
+
+  
+.left-column[
+
+Designed for datasets with a large number of quantitative variables.
+ 
+Example: banknote dimensions, 100 each genuine and counterfeit 
+
+- 6 quantities
+- 1 category
+
+]
+.right-column[
+&lt;img src="img/parallel-coord-example.png"&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Data source: &lt;em&gt;bank&lt;/em&gt; dataset included with the &lt;a href="https://CRAN.R-project.org/package=gclus"&gt;gclus&lt;/a&gt; R package
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Survey stacked-bar chart
+
+Compare responses to Likert-style survey questions. Each bar shows 100% of responses to a question.  
+
+.pull-left[
+Colored segments represent percentage shares for the category levels:  Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree. 
+
+Three approaches, each with their own advantages. 
+
+- diverging 
+- diverging with separate neutral 
+- 100% stacked bars 
+
+Data
+
+- 2 categories (questions, responses)
+- 1 quantity (percent share)
+]
+.pull-right[
+&lt;img src="img/likert-example-1.png" style="height:130px"&gt;
+&lt;img src="img/likert-example-2.png" style="height:130px"&gt;
+&lt;img src="img/likert-example-3.png" style="height:130px"&gt;
+]
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Images from: Lisa Charlotte Muth and Gregor Aisch (2018) 
+&lt;a href="https://blog.datawrapper.de/divergingbars/"&gt;
+The case against diverging stacked bars&lt;/a&gt; Data wrapper blog. 
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+---
+class:inverse, center, middle
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

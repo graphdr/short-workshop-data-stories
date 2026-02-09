@@ -1,0 +1,53 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About",
+      "description": "A brief biography",
+      "author": [],
+      "contents": "\r\nData graphics\r\nI started doing data visualization work with a research group in engineering education around 2008. The iterative process we developed to “find the story” in our data has been instrumental in shaping my approach to data graphics. You can read more about our research at https://midfield.online/.\r\nI occasionally write about visual rhetoric, graph design, and R on my Data Stories blog.\r\n\r\nMusic\r\nMy dad was a guitar player and taught me my first chords. I’ve been songwriting, performing, and composing since my teens. I’ve posted some draft tracks to SoundCloud.\r\nA favorite musical pilgrimage is the annual Swannanoa Gathering near Asheville, NC in late July.\r\n\r\nWork life\r\nI am a graduate of California State University, Northridge (1991), and the University of Washington (1993, 1995), all in mechanical engineering. I taught at Rose-Hulman Institute of Technology from 2000–2020. My favorite courses were design, system dynamics, measurement systems, and data visualization. I retired from teaching in 2020.\r\n\r\nLinks\r\nblog https://graphdr.github.io/data-stories/\r\nrepo https://github.com/graphdr\r\nmail graphdoctor@gmail.com\r\n\r\n\r\n\r\n",
+      "last_modified": "2024-02-06T13:34:28-05:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Data stories workshop",
+      "description": "Visualizing quantitative data: what makes a chart effective?\n",
+      "author": [],
+      "contents": "\r\nWelcome\r\nIn this workshop, we introduce a few basic ideas on creating effective charts of quantitative data.\r\nFor most of us, our education entailed years of training and practice using the tools of effective written and spoken communication, what we might term verbal rhetoric. Yet very few of us experience anywhere near as thorough a grounding in the tools of effective graphical communication, or visual rhetoric.\r\nThis helps explain why folks who may be perfectly competent otherwise can uncritically produce ghastly charts such as the “solar output profile” chart below.\r\nFigure 1: Example of an ineffective chart. Even if you take the time to understand what the chart purports to show, there is no compelling message for the audience to take away. Source: Clarke et al. (2021)By the end of the workshop you should be able to\r\nDescribe limitations of common graph types\r\nDescribe a graph type you had not encountered before\r\nExplain how you might begin to think critically about visual information\r\nBlogs to browse\r\nThe Functional Art, Alberto CairoEvergreen Data, Stephanie EvergreenVisual Business Intelligence, Stephen FewStorytelling with Data, Cole Nussbaumer Knaflic and team\r\nAcknowledgments\r\nR package authorsdata.table Fast aggregation of large data, Matt Dowle and Arun Srinivasanggplot2 Elegant data visualizations using the grammar of graphics, Hadley Wickham, Winston Chang, et al.distill, Scientific and technical article format for the web, JJ Allaire, Rich Iannone, et al.xaringan Create HTML5 slides with R Markdown, Yihui Xie\r\n\r\n\r\n\r\nCairo, Alberto. 2019. How Charts Lie. New York: W.W. Norton.\r\n\r\n\r\nClarke, Steven, Michael Anderson, Daniela Aramayo, Dominic Molinari, Arthur Tseng, Zoe Warp, and John Ko. 2021. “University of San Diego Energy Master Plan.” Anaheim, CA: Willdan Energy Solutions.\r\n\r\n\r\nCleveland, William S. 1993. Visualizing Data. Summit, NJ: Hobart Press.\r\n\r\n\r\nDoumont, Jean-luc. 2009. Trees, Maps, and Theorems. Belgium: Principiae.\r\n\r\n\r\nKostelnick, Charles, and Michael Hassett. 2003. Shaping Information. Carbondale, IL: Southern Illinois university Press.\r\n\r\n\r\nRobbins, Naomi. 2013. Creating More Effective Graphs. Wayne, NJ: Chart House.\r\n\r\n\r\nTufte, Edward. 1983. The Visual Display of Quantitative Information. Cheshire, CT: Graphics Press.\r\n\r\n\r\n———. 1997. Visual Explanations. Cheshire, CT: Graphics Press.\r\n\r\n\r\nWainer, Howard. 1997. Visual Revelations. Mahwah, NJ: Lawrence Erlbaum Assoc.\r\n\r\n\r\n———. 2014. Medical Illuminations. UK: Oxford Univ. Press.\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2024-02-06T13:37:43-05:00"
+    },
+    {
+      "path": "license.html",
+      "title": "License",
+      "description": "For text, images, code, and data.",
+      "author": [],
+      "contents": "\r\nThe following licenses apply to the text, images, code, and data in\r\nthis website. My goal is to minimize legal encumbrances to the\r\ndissemination, sharing, use, and re-use of this work. However, the\r\nexisting rights of authors whose work is cited are reserved to those\r\nauthors.\r\nCC-BY\r\n4.0 for my text and images\r\nGPL-3 for my\r\ncode\r\nCC0\r\nfor data\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-08T11:31:06-04:00"
+    },
+    {
+      "path": "session1.html",
+      "title": "Session 1",
+      "description": "Limitations of common graph types. Demonstrating how to avoid   \nlimitations and improve perception, reasoning, and credibility. ",
+      "author": [],
+      "contents": "\r\nLimitations of common graph types\r\nIn the first session we demonstrate the perceptual limitations of common graph types and suggest more effective alternatives.\r\n\r\nThe rationale behind alternative designs is illustrated with the goals of\r\nImproving perception of stories in the data\r\nMaking it easier to reason quantitatively about the data\r\nEnhancing our credibility with the audience\r\nMaterials\r\nworksheets I suggest you have a printed copy of these worksheets to write in during the workshop. We have a number of think-write-share activities that for many people work best in writing.\r\nslides used during the workshop.\r\n\r\n\r\n\r\n",
+      "last_modified": "2024-02-06T13:38:00-05:00"
+    },
+    {
+      "path": "session2.html",
+      "title": "Session 2",
+      "description": "Expanding your graphical repertoire. Illustrating a repertoire of \ngraph types and how they are suited to specific data structures.",
+      "author": [],
+      "contents": "\r\nExpanding your graphical repertoire\r\nIn the second session we illustrate a repertoire of graph types and\r\nhow they are suited to specific data structures and answering specific\r\ntypes of questions.\r\n\r\nThe session should encourage you to:\r\nUnderstand the structure of your data\r\nUnderstand the type of question the data can answer\r\nExplore different graph types suited to the data and the\r\nquestion\r\nKeep reading and learning—an unfamiliar design may be just what you\r\nneed\r\nMaterials\r\nworksheets I suggest\r\nyou have a printed copy of these worksheets to write in during the\r\nworkshop. We have a number of think-write-share activities that for many\r\npeople work best in writing.\r\nslides used during the\r\nworkshop.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-08T11:31:12-04:00"
+    },
+    {
+      "path": "session3.html",
+      "title": "Session 3",
+      "description": "Critical thinking about visual information&mdash;a case study. \nDetecting and correcting deliberate visual lies that attempt \nto restrict reproductive rights. ",
+      "author": [],
+      "contents": "\r\nCritical thinking about visual information—a case\r\nstudy\r\nIn the third session we study the visual rhetoric of a deliberate\r\nvisual lie in the pursuit of restricting reproductive rights. We focus\r\non\r\nHow the authors abuse the conventions of visual rhetoric to serve\r\ntheir rhetorical goals\r\nWhat legitimate stories these data tell\r\nWhat legitimate questions the data raise\r\n[slides] in progress\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-07-08T11:31:13-04:00"
+    }
+  ],
+  "collections": []
+}

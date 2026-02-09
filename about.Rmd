@@ -1,0 +1,38 @@
+---
+title: "About"
+description: |
+  A brief biography
+---
+
+**Data graphics**
+
+I started doing data visualization work with a research group in engineering education around 2008. The iterative process we developed to  "find the story" in our data has been instrumental in shaping my approach to data graphics. You can read more about our research at [https://midfield.online/](https://midfield.online/). 
+
+
+
+I occasionally write about visual rhetoric, graph design, and R on my [Data Stories](https://graphdr.github.io/data-stories/) blog.  
+
+![](images/data-graphics-preview.png){width=60%}
+
+
+**Music**
+
+My dad was a guitar player and taught me my first chords. I've been songwriting, performing, and composing since my teens. I've posted some draft tracks to [SoundCloud](https://soundcloud.com/richardlaytonmusic).
+
+
+
+A favorite musical pilgrimage is the annual [Swannanoa Gathering](https://swangathering.com/) near Asheville, NC in late July.
+
+![](images/guitar2.png){width=30%}
+
+**Work life**
+
+I am a graduate of California State University, Northridge (1991), and the University of Washington (1993, 1995), all in mechanical engineering. I taught at Rose-Hulman Institute of Technology from 2000--2020. My favorite courses were design, system dynamics, measurement systems, and data visualization. I retired from teaching in 2020. 
+
+![](images/teaching-preview.png){width=30%}
+
+**Links**
+
+blog <https://graphdr.github.io/data-stories/>    
+repo <https://github.com/graphdr>    
+mail <a href="mailto:graphdoctor@gmail.com">graphdoctor@gmail.com</a>   

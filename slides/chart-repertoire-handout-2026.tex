@@ -1,0 +1,466 @@
+\documentclass[]{tufte-handout}
+
+% ams
+\usepackage{amssymb,amsmath}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \makeatletter
+  \@ifpackageloaded{fontspec}{}{\usepackage{fontspec}}
+  \makeatother
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \makeatletter
+  \@ifpackageloaded{soul}{
+     \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+     \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+   }{}
+  \makeatother
+
+\fi
+
+% graphix
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+
+% booktabs
+\usepackage{booktabs}
+
+% url
+\usepackage{url}
+
+% hyperref
+\usepackage{hyperref}
+
+% units.
+\usepackage{units}
+
+
+\setcounter{secnumdepth}{-1}
+
+% citations
+
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% For Pandoc 2.8 to 2.11
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For pandoc 2.11+ using new --citeproc
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+% pandoc syntax highlighting
+
+% table with pandoc
+
+% multiplecol
+\usepackage{multicol}
+
+% strikeout
+\usepackage[normalem]{ulem}
+
+% morefloats
+\usepackage{morefloats}
+
+
+% tightlist macro required by pandoc >= 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% title / author / date
+\title[Graphical repertoire]{Expanding your graphical repertoire}
+\author{Richard Layton}
+\date{2026--02--10}
+
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\begin{marginfigure}
+\emph{Richard Layton} resides online at
+
+\begin{itemize}
+\tightlist
+\item
+  \url{https://www.graphdoctor.com}\strut \\
+\item
+  \url{https://github.com/graphdr}
+\end{itemize}
+\end{marginfigure}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-2-1}
+
+\section{Variables, design, message}\label{variables-design-message}
+
+\begin{marginfigure}
+\emph{Trees, Maps, and Theorems} by Jean-luc Doumont (2009) inspired the
+four main topics.
+\end{marginfigure}
+
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{img/day2-cover-preview-3.png}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-4-1}
+
+\section{§ Showing evolution}\label{showing-evolution}
+
+\begin{marginfigure}
+Square brackets \emph{{[}i{]}} give the slide number.
+\end{marginfigure}
+
+\subsection{{[}4{]} Time series}\label{time-series}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../images/sdu-elec-by-month.png}
+
+\section{§ Displaying distributions}\label{displaying-distributions}
+
+\subsection{{[}6{]} Data}\label{data}
+
+World speed skiing (km/hr) competitions 1953--1995
+
+\begin{verbatim}
+Key: <Year, Event, Sex>
+     Year                 Event    Sex  Speed
+    <int>                <fctr> <fctr>  <num>
+ 1:  1952        Speed Downhill   Male 167.85
+ 2:  1953        Speed Downhill   Male 168.86
+ 3:  1953             Speed One   Male 174.14
+ 4:  1957             Speed One   Male 177.47
+ 5:  1961        Speed Downhill   Male 165.42
+ 6:  1961             Speed One   Male 190.12
+---                                          
+86:  1993             Speed One   Male 170.30
+87:  1994 Speed Downhill Junior Female 160.22
+88:  1994 Speed Downhill Junior   Male 164.47
+89:  1995 Speed Downhill Junior Female 166.52
+90:  1995 Speed Downhill Junior Female 162.37
+91:  1995 Speed Downhill Junior   Male 168.01
+\end{verbatim}
+
+\subsection{{[}7{]} Strip chart}\label{strip-chart}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-distributions-01.png}
+
+\subsection{{[}8{]} Add a category}\label{add-a-category}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-distributions-02.png}
+
+\subsection{{[}9{]} Add a second category}\label{add-a-second-category}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-distributions-03.png}
+
+\subsection{{[}10{]} Data}\label{data-1}
+
+MIDFIELD graduates (N = 270k), enrolled in Engineering, excluding 10th
+and 90th quantiles
+
+\begin{verbatim}
+Key: <path, sex>
+                  path    sex years_to_grad
+                <char> <char>         <num>
+     1: Nontraditional Female           3.9
+     2: Nontraditional Female           1.9
+     3: Nontraditional Female           3.9
+     4: Nontraditional Female           5.3
+     5: Nontraditional Female           5.1
+    ---                                    
+269053:    Traditional   Male           2.6
+269054:    Traditional   Male           1.3
+269055:    Traditional   Male           3.0
+269056:    Traditional   Male           5.3
+269057:    Traditional   Male           0.7
+\end{verbatim}
+
+\subsection{{[}11{]} Box and whisker chart}\label{box-and-whisker-chart}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-distributions-04.png}
+
+\subsection{{[}12{]} Add a category}\label{add-a-category-1}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-distributions-05.png}
+
+\subsection{{[}13{]} Combine a second
+category}\label{combine-a-second-category}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-distributions-06.png}
+
+\subsection{{[}14{]} Data}\label{data-2}
+
+Revisiting the USD electrical data
+
+\begin{verbatim}
+Key: <date_peak, minutes>
+      bill_year bill_month date_peak minutes    source    MW
+          <int>     <fctr>    <char>   <num>    <char> <num>
+   1:      2019        Jan 1/22/2019      15 Fuel cell  0.80
+   2:      2019        Jan 1/22/2019      15     Meter  1.16
+   3:      2019        Jan 1/22/2019      15     Solar  0.00
+   4:      2019        Jan 1/22/2019      15     Total  1.96
+   5:      2019        Jan 1/22/2019      30 Fuel cell  0.80
+  ---                                                       
+4604:      2018        Sep 9/13/2018    1425     Total  2.76
+4605:      2018        Sep 9/13/2018    1440 Fuel cell  0.89
+4606:      2018        Sep 9/13/2018    1440     Meter  1.75
+4607:      2018        Sep 9/13/2018    1440     Solar  0.00
+4608:      2018        Sep 9/13/2018    1440     Total  2.64
+\end{verbatim}
+
+\subsection{{[}15{]} Ignoring time}\label{ignoring-time}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../images/usd-energy-boxplot.png}
+
+\subsection{{[}16{]} Discussion: Displaying
+distributions}\label{discussion-displaying-distributions}
+
+Quantitative test scores from a recent exam could be displayed as a
+distribution. What categorical variable(s) could be added to create
+comparative distributions?
+
+\begin{marginfigure}
+\pandocbounded{\includegraphics[keepaspectratio]{img/variables-cycle.png}}
+\end{marginfigure}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-11-1}
+
+\section{§ Comparing data}\label{comparing-data}
+
+\subsection{{[}18{]} Data}\label{data-3}
+
+Representation at graduation in 3 engineering programs, 19 US
+institutions, 1987--2018
+
+\begin{verbatim}
+          origin    sex Electrical Engr Computer Engr Computer Science
+          <char> <char>           <int>         <int>            <int>
+1: International Female            1865           140              365
+2: International   Male            8530           993             1442
+3:      Domestic Female           23426           702             2923
+4:      Domestic   Male           90150          7481            13987
+\end{verbatim}
+
+\subsection{{[}19{]} Dot chart}\label{dot-chart}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-01.png}
+
+\subsection{{[}20{]} Add a second
+category}\label{add-a-second-category-1}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-02.png}
+
+\subsection{{[}21{]} Exchange mapping of categorical
+variables}\label{exchange-mapping-of-categorical-variables}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-03.png}
+
+\subsection{{[}22{]} Logarithmic scale for orders of magnitude
+differences}\label{logarithmic-scale-for-orders-of-magnitude-differences}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-04.png}
+
+\subsection{{[}23{]} One program per facet}\label{one-program-per-facet}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-05.png}
+
+\subsection{{[}24{]} Add a third category}\label{add-a-third-category}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-06.png}
+
+\subsection{{[}25{]} Combine categories}\label{combine-categories}
+
+\includegraphics[width=1.4\linewidth,height=\textheight,keepaspectratio]{../results/day-2-compare-07.png}
+
+\subsection{{[}26{]} Discussion: Comparing
+data}\label{discussion-comparing-data}
+
+Consider Table 2 Campus Buildings in the USD Energy Master Plan
+(p.~17-18). If we were to visualize these data in dot-chart form:
+
+\begin{itemize}
+\tightlist
+\item
+  Select the quantitative variable
+\end{itemize}
+
+\begin{marginfigure}
+\pandocbounded{\includegraphics[keepaspectratio]{img/variables-cycle.png}}
+\end{marginfigure}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-14-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Select a categorical variable for the rows
+\end{itemize}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-15-1}
+
+\begin{itemize}
+\tightlist
+\item
+  How would you order the rows?
+\end{itemize}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-16-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Select a second categorical variable for the facets
+\end{itemize}
+
+\section{§ Revealing correlations}\label{revealing-correlations}
+
+\subsection{{[}28{]} Data}\label{data-4}
+
+Engineering students at 14 institutions persisting to year 4 and
+graduating by year 6, 1987-2019
+
+\begin{verbatim}
+    institution    sex    y4    y6
+         <char> <char> <int> <int>
+ 1:           A Female  4953  4525
+ 2:           A   Male 17897 16312
+ 3:           B Female  2834  3316
+---                               
+26:           N   Male  1338   838
+27:           P Female   457   283
+28:           P   Male   827   447
+\end{verbatim}
+
+\subsection{{[}29{]} Scatterplots are designed to reveal
+correlation}\label{scatterplots-are-designed-to-reveal-correlation}
+
+\includegraphics[width=0.51\linewidth,height=\textheight,keepaspectratio]{../results/day-2-correlation-01.png}
+
+\subsection{{[}30{]} Add a category}\label{add-a-category-2}
+
+\includegraphics[width=0.51\linewidth,height=\textheight,keepaspectratio]{../results/day-2-correlation-02.png}
+
+\subsection{{[}31{]} One facet per sex}\label{one-facet-per-sex}
+
+\includegraphics[width=1.2\linewidth,height=\textheight,keepaspectratio]{../results/day-2-correlation-03.png}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-18-1}
+
+\subsection{{[}32{]} One facet per
+institution}\label{one-facet-per-institution}
+
+\includegraphics[width=1.5\linewidth,height=\textheight,keepaspectratio]{../results/day-2-correlation-04.png}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-19-1}
+
+\subsection{{[}33{]} Change the quantitative
+variable}\label{change-the-quantitative-variable}
+
+Engineering students at 14 institutions persisting to year 4 and
+graduating by year 6, 1987--2019
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-20-1}
+
+\includegraphics[width=1.3\linewidth,height=\textheight,keepaspectratio]{../results/day-2-correlation-05.png}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-21-1}
+
+\subsection{{[}34{]} Discussion: Revealing
+correlations}\label{discussion-revealing-correlations}
+
+Figure 17 (p.~36) of the USD Energy Master Plan has the form of a
+scatterplot. We must assume that the authors are attempting to discover
+a correlation between two quantitative variables.
+
+\begin{marginfigure}
+\pandocbounded{\includegraphics[keepaspectratio]{img/variables-cycle.png}}
+\end{marginfigure}
+
+\begin{itemize}
+\tightlist
+\item
+  What are the two quantitative variables?
+\end{itemize}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-23-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Do the variables appear to be correlated?
+\end{itemize}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-24-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Is the linear curve fit justified?
+\end{itemize}
+
+\section{§ Closing discussion}\label{closing-discussion}
+
+\begin{marginfigure}
+\pandocbounded{\includegraphics[keepaspectratio]{img/variables-cycle.png}}
+\end{marginfigure}
+
+\subsection{{[}36{]} Variables, design,
+message}\label{variables-design-message-1}
+
+\begin{itemize}
+\item
+  Chart design depends on your variables
+\item
+  Chart design depends on the message the data convey
+\item
+  Continue to expand your repertoire of chart types
+\end{itemize}
+
+\includegraphics{chart-repertoire-handout-2026_files/figure-latex/unnamed-chunk-26-1}
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Clarke+etal:2021}
+Clarke, Steven, Michael Anderson, Daniela Aramayo, Dominic Molinari,
+Arthur Tseng, Zoe Warp, and John Ko. 2021. {``University of San Diego
+Energy Master Plan.''} Anaheim, CA: Willdan Energy Solutions.
+
+\bibitem[\citeproctext]{ref-Doumont:2009}
+Doumont, Jean-luc. 2009. \emph{{Trees, Maps, and Theorems}}. Belgium:
+{Principiae}.
+
+\bibitem[\citeproctext]{ref-R-GDAdata:2015}
+Unwin, Antony. 2015. \emph{GDAdata: Datasets for the Book Graphical Data
+Analysis with r}. \url{https://CRAN.R-project.org/package=GDAdata}.
+
+\end{CSLReferences}
+
+
+
+\end{document}

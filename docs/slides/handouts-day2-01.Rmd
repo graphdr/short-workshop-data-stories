@@ -1,0 +1,653 @@
+---
+title:  "Data stories: Expanding your graphical repertoire"
+runningheader: "Session 2: Data stories" # only for pdf output
+author: "Richard Layton"
+date:   "Session 2, 2022--02--21"
+output:
+  tufte::tufte_handout:
+    citation_package: natbib
+    latex_engine: pdflatex
+bibliography: ../references.bib
+link-citations: yes 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_knit$set(root.dir = "../")
+
+library(data.table)
+library(ggplot2)
+library(knitr)
+library(graphclassmate)
+library(magick)
+library(docxtools)
+
+library(tufte)
+library(tufterhandout)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+# Expanding your graphical repertoire: Four main topics[^1] 
+
+![](img/handout-day2-outline.png){width="75%"}
+
+`r margin_note("I suggest you have a printed copy of these worksheets to write in during the workshop. We have a number of think-write-share activities that for many people work best when thoughts are written down.")`
+
+```{r fig.height = 0.1}
+put_gap()
+```
+
+# Notes 
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+# `r "\U00A7"` Comparing data
+
+
+
+
+
+
+
+## Dot plot
+
+Infant mortality in the US by maternal age group.[^2]
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-02-01.png){width="80%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: (1) quamtity, (1) category
+  
+$\quad$
+  
+*Argument*: Comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 1.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+## Multiway dot chart, superposed 
+
+Infant mortality in the US by maternal age group, maternal race, and geographical region.[^2]
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-02-02.png){width="160%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: (1) quamtity, (3) categories
+
+$\quad$
+  
+*Argument*: Comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Revealing correlations
+
+
+
+
+
+
+
+# Scatterplot
+
+GDP[^3] and life expectancy at birth[^4] by country. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-02-03.png){width="80%"}
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+
+$\quad$
+
+*Variables*: (2) quamtities
+
+$\quad$
+
+*Argument*: Correlation
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+## Scatterplot, faceted
+
+GDP[^3] and life expectancy at birth[^4] by region and country. 
+
+```{r fig.height = 0.4}
+put_gap()
+```
+
+![](img/handout-02-04.png){width="160%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: (2) quamtities, (1) category
+
+$\quad$
+  
+*Argument*: Correlation & comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Showing evolution
+
+
+
+
+
+
+
+## Time series 
+
+Life expectancy at birth[^4] in the US. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-02-05.png){width="80%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: Discrete time, (1) quantity
+  
+$\quad$
+  
+*Argument*: Evolution
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 1.2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+## Time series, faceted
+
+Life expectancy at birth[^4] in selected countries 
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-02-06.png){width="160%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+$\quad$
+
+*Variables + Argument &#x2192; Design*
+
+$\quad$
+
+*Variables*: Discrete time,    
+(1) quantity, (1) category
+
+$\quad$
+
+*Argument*: Evolution & comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Connected scatterplot, faceted
+
+GDP[^3] and life expectancy at birth[^4] over time in selected countries. 
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-02-07.png){width="160%"}    
+
+```{r fig.height = 0.4}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: Discrete time,    
+(2) quantities, (1) category
+  
+$\quad$
+  
+*Argument*: Evolution, correlation,    
+& comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Cyclic time series, superposed
+
+Extent of polar ice by month over a span of 43 years.[^5]
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-02-08.png){width="160%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: Discrete time,    
+(1) quantity, (2) categories
+  
+$\quad$
+  
+*Argument*: Evolution & comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Displaying distributions
+
+
+
+
+
+
+
+
+## Strip chart, superposed
+
+Speeds by event and sex of skiers at the world speed competition in Verbier, Switzerland, April 2011.[^6]  
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-02-09.png){width="160%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: (1) quantity, (2) categories
+  
+$\quad$
+  
+*Argument*: Distribution & comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+## Box and whisker chart
+
+Years to graduate for US undergraduate students[^7][^8] by sex and path (traditional or non-traditional experience).
+
+```{r fig.height = 0.4}
+put_gap()
+```
+
+![](img/handout-02-10.png){width="160%"}    
+    
+```{r fig.height = 0.3}
+put_gap()
+```
+
+- Describe the main idea(s) this chart conveys to you.
+
+```{marginfigure, echo = TRUE}
+$\quad$
+  
+$\quad$
+  
+*Variables + Argument &#x2192; Design*
+  
+$\quad$
+
+*Variables*: (1) quantity, (2) categories
+  
+$\quad$
+  
+*Argument*: Distribution & comparison
+```
+
+```{r fig.height = 2}
+put_gap()
+```
+
+- What questions does the chart raise?
+
+```{r fig.height = 2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ideas to consider
+
+\begin{fullwidth}
+\subsection{Chart selection}
+\begin{itemize}
+\item What are your variables, by name?
+\item Is a variable quantitative or categorical?
+\item Is a categorical variable naturally ordered (ordinal) or not (nominal)?
+\item Starting with a small number of variables, what chart types match the data structure?
+\item How does the chart type change as you add new variables?
+\end{itemize}
+
+$\quad$
+
+\subsection{Chart aesthetics}
+\begin{itemize}
+\item Superposed designs work best with small numbers of subsets or when the subsets visually cluster.
+\item Faceted designs permit a greater number of subsets to be compared.
+\item Deliberately assign the size, shape, and color of every visual element.
+\item Use color deliberately. Choose colors that are safe for color-vision-deficient viewers.
+\end{itemize}
+
+$\quad$
+
+\subsection{Audience and message}
+\begin{itemize}
+\item What is your story?
+\item Does the visual evidence directly support your verbal argument?
+\item Have you placed the story in context visually?
+\item Who is your audience?
+\item Will the audience resist your conventions?
+\item If so, is overcoming audience resistance worth the effort?
+\end{itemize}
+
+$\quad$
+
+\subsection{Ethics of visual rhetoric}
+\begin{itemize}
+\item Is your design equitable and inclusive?
+\item Are you seeing only what you want to see? What the audience wants to see?
+\item All there alternative explanations for what the chart shows?
+\item Are your data dubious? Insufficient?
+\item Have you concealed information? Concealed a large uncertainty?
+\item Does your chart suggest misleading patterns?
+\end{itemize}
+\end{fullwidth}
+
+```{r fig.height = 0.5}
+put_gap()
+```
+
+[^1]: The four main types of argument are adapted from @Doumont:2009.    
+[^2]: Data source: @CDC-Wonder:2022    
+[^3]: Data source: @GDP:2022    
+[^4]: Data source: @LifeExp:2022    
+[^5]: Data source: @NASA+Snow+Ice:2017    
+[^6]: Data source: @R-GDAdata    
+[^7]: Data source: @R-graphclassmate from the MIDFIELD database.
+[^8]: Data source: @MIDFIELD:2021
+
+# References
+
+
+

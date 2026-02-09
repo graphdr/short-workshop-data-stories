@@ -1,0 +1,535 @@
+---
+title:  "Creating more effective charts"
+runningheader: "More effective charts" # only for pdf output
+author: "Richard Layton"
+date: "2026--02--10"
+output:
+  tufte::tufte_handout:
+    citation_package: default
+    latex_engine: pdflatex
+bibliography: ../references.bib
+link-citations: yes 
+---
+
+```{marginfigure, echo=TRUE}
+*Richard Layton* is online at <https://graphdr.github.io/data-stories/> (charts) and <https://www.youtube.com/@RichardLayton99> (songs). 
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+knitr::opts_knit$set(root.dir = "../")
+
+library(data.table)
+library(ggplot2)
+library(knitr)
+library(graphclassmate)
+library(magick)
+library(docxtools)
+
+library(tufte)
+library(tufterhandout)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+
+
+
+
+
+# Perception, reasoning, and credibility 
+
+```{marginfigure, echo=TRUE}
+_Creating More Effective Graphs_ by Naomi Robbins (2013) inspired the session title and Chapter 2, "Limitations of some common graphs," inspired our exercises.
+```
+
+![](img/handout-day1-outline-2024.png){width="75%"}
+
+```{r fig.height = 0.05}
+put_gap()
+```
+
+# `r "\U00A7"` Effective alternatives to pie charts
+
+
+
+
+
+
+## Judging pie slices is a low-accuracy task
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-01-01-v2.png){width="150%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+Data source: World Bank (2022)
+```
+
+
+
+
+
+
+
+## Judging values along a common axis is a high-accuracy task
+
+```{marginfigure, echo = TRUE}
+![](img/pie-preview.png){width="50%"}    
+```
+`r margin_note("The data from the pie chart is shown below as dots along a common scale.")`
+
+- The new chart displays the same data 
+
+- *Visually estimate* the percentages using the new chart
+
+- Fill-in the blanks in the table
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-01-02.png){width="150%"}
+
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+## 3D effects distort our judgment even further
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+![](img/handout-01-03-v2.png){width="150%"}    
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+Data source: World Bank (2022)
+```
+
+
+
+
+
+
+
+
+
+## Again, a common scale improves our visual judgments
+
+```{marginfigure, echo = TRUE}
+![](img/three-d-pie-preview.png){width="50%"}    
+```
+`r margin_note("The data from the pie chart is shown below as dots along a common scale.")`
+
+- The new chart displays the same data 
+
+- *Visually estimate* the percentages using the new chart
+
+- Fill-in the blanks in the table
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-01-04.png){width="150%"}
+
+```{r fig.height = 0.6}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Effective alternatives to bar charts 
+
+
+
+
+
+
+
+
+## 3D effects always distort our judgment
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/handout-01-05-v2.png){width="150%"}
+
+```{r fig.height = 0.3}
+put_gap()
+```
+
+```{marginfigure, echo=TRUE}
+Data source: World Bank (2022)
+```
+
+
+
+
+
+
+
+
+
+## Same data---without 3D effects---along a common scale
+
+```{marginfigure, echo = TRUE}
+![](img/three-d-bar-preview.png){width="50%"}    
+```
+`r margin_note("The data from the 3D bar chart is shown below as dots along a common scale.")`
+
+- The new chart displays the same data
+
+- Visually estimate the percentages using the new chart
+
+- Fill-in the blanks in the table
+
+![](img/handout-01-06.png){width="150%"}
+
+```{r fig.height = 1}
+put_gap()
+```
+
+
+
+
+
+
+
+
+## With a zero baseline and no 3D effects, bars are OK
+
+- Zero baseline avoids deception
+
+- Ordered by data values
+
+- Only the endpoint encodes information
+
+
+```{r fig.height = 0.5}
+put_gap()
+```
+
+
+## Consider dot charts for
+
+- Visually comparing quantities 
+
+- Replacing most pie and bar charts 
+
+
+
+
+```{marginfigure, echo=TRUE}
+Default bar chart:
+![](img/handout-01-08.png){width="100%"} 
+Ordered by magnitude:
+![](img/handout-01-09.png){width="100%"}
+Omitting the fill color:
+![](img/handout-01-10.png){width="100%"}
+Produces a dot chart:
+![](img/handout-01-11.png){width="100%"}
+```
+
+
+
+
+## Notes
+```{r fig.height = 0.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Aligning the design to the story
+
+Redesigning a chart to find what stories might be in the data 
+
+`r newthought("The appendix of the USD energy report")` includes 12  stacked-column charts like the one shown below. Electrical power is reported for the day of maximum power usage (_peak demand day_) in a month, yielding one chart of 24 hours of power usage per month. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-energy-00.png){width="155%"}
+
+`r newthought("After we discuss these data,")` write your thoughts in response to these prompts:
+
+- What information is easy to extract?
+
+```{r fig.height = 0.7}
+put_gap()
+```
+
+- What information is not easy to extract?
+
+
+
+
+
+
+
+## Redesign 1: Small multiples
+
+The report displays the full data set in 12 full-size charts, a format that makes visualizing annual trends quite cumbersome. 
+
+A simple redesign is shown below---reduce the charts to thumbnails and collect them in a single chart.\sidenote{To do this properly, the scales should be made readable. I didn't bother because we still have to contend with the deficiencies of the stacked-column design.} This format is similar to what Edward Tufte calls *small multiples.* We sacrifice some detail, but we a more likely to be able to _see_ a story. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+
+![](img/sdu-rows-of-charts-2.png){width="155%"}
+
+`r newthought("Write your thoughts")` in response to these prompts:
+
+- What new stories (if any) do you see now? What do you see at a glance?
+
+```{r fig.height = 1}
+put_gap()
+```
+
+- Why do you suppose the authors used a stacked-column design?
+
+
+
+
+
+
+## Redesign 2: Unstacking the stacked columns
+
+The simplest approach to redesigning a stacked-column chart is to plot the components of the stacks as line-charts in separate panels. Now we can see the trends for each of the three demand sources independently of one another, plus the total in the top row, with all 12 peak-demand days shown in one chart. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-elec-by-month.png){width="155%"}
+
+`r newthought("Write your thoughts")` in response to these prompts:
+
+- What new stories (if any) do you see now? What do you see at a glance?
+
+```{r fig.height = 1.1}
+put_gap()
+```
+
+- What attributes of this design _enhance the reader's ability_ to make definitive assertions about these data?
+
+```{r fig.height = 0.5}
+put_gap()
+```
+
+
+
+
+
+
+
+## Redesign 3: Cycle chart
+
+The previous charts display two obvious types of behavior: fuel-cell data is essentially constant; solar and meter data are clearly _cyclical_.
+
+Trends within cyclical data can often be revealed using a _cycle chart_ in which we switch the graphical roles of two time-based variables, in our case:
+
+month
+
+: twelve months of the fiscal year, using measurements from the one peak-demand day in each month
+
+time-of-day
+
+: in 15-minute intervals from 0015 to 2400 on the peak-demand day
+
+
+`r newthought("")`In the previous, conventional time-series design: 
+
+- each panel shows 24 hours of data for a particular month
+- the panel sequence is month to month
+
+![](img/sdu-month-1-panel-v2.png){width="60%"}
+
+`r newthought("")`In the new design, we switch the graphical roles of the two discrete-time variables, such that:
+
+- each panel shows 12 months of data for a particular hour
+- the panel sequence is hour to hour
+
+![](img/sdu-hour-1-panel-v2.png){width="60%"}
+
+
+
+
+
+
+
+
+
+
+## Redesign 3: Cycle chart (in MW)
+
+Here, the first panel shows 12 months of data for hour 1, the next panel shows 12 months of data for hour 2, and so on. 
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-elec-by-hour.png){width="155%"}
+
+`r newthought("Write your thoughts")` in response to these prompts:
+
+- What new stories (if any) do you see now? What do you see at a glance?
+
+```{r fig.height = 2.5}
+put_gap()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Redesign 4: Cycle chart (percent of total)
+
+Another way to look at these data is to determine the percentage of total demand is met by each of the three sources.
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+![](img/sdu-elec-by-hour-pct.png){width="155%"}
+
+`r newthought("Write your thoughts")` in response to these prompts: 
+
+- What new stories (if any) do you see now? What do you see at a glance?
+
+```{r fig.height = 2.2}
+put_gap()
+```
+
+
+
+
+
+
+
+
+# `r "\U00A7"` Advice from experts
+
+Match the expert to the advice. 
+
+`r newthought("Fill in the blanks")` with letters A--D. 
+
+```{r}
+x <- wrapr::build_frame(
+  "Expert", "Letter", "Emphasizes the importance of"|
+  " ", " ", " "|
+  "A. Alberto Cairo"      , "______" , "message"|
+  " ", " ", " "|
+    
+  "B. Jean-luc Doumont"   , "______" , "variables"|
+  " ", " ", " "|
+    
+  "C. Stephanie Evergreen", "______" , "revealing the complex"|
+    " ", " ", " "|
+    
+  "D. Edward Tufte"       , "______" , "knowing your main point"|
+  " ", " ", " "|
+    
+  " "                     , "______" , "not lying to yourself"|
+    
+  " ", " ", " ")
+
+knitr::kable(x)
+```
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+# Ideas to consider
+
+- Know your data. Characterize the number and type of variables. 
+
+- What's the story? Revise until you have aligned the logic of the chart with the logic of that story. 
+
+- Avoid lying to yourself. Are you seeing only what you want to believe? 
+
+- Compared to what? Is there adequate context?
+
+- Find ways to reveal (rather than dumbing down) complexity. 
+
+- Expand your repertoire of chart types. Avoid using easy-to-make charts that don't suit your rhetorical goals.
+
+- Know your audience. Edit your charts to meet their needs. 
+
+- Control every pixel. Default software settings are generally wrong. 
+
+
+```{r fig.height = 0.2}
+put_gap()
+```
+
+
+
+# References
+
+| Cairo, Alberto. 2019. _How Charts Lie_. New York: W.W. Norton.
+|
+| Clarke, Steven, Michael Anderson, Daniela Aramayo, Dominic 
+|   Molinari, Arthur Tseng, Zoe Warp, and John Ko. 2021. "University 
+|   of San Diego Energy Master Plan." Anaheim, CA: Willdan Energy 
+|   Solutions.
+|
+| Doumont, Jean-luc. 2009. _Trees, Maps, and Theorems_. Belgium: 
+|   Principiae.
+|
+| Evergreen, Stephanie D.H. 2017. _Effective Data Visualization_. 
+|   Thousand Oaks, CA: Sage.
+|
+| Robbins, Naomi. 2013. _Creating More Effective Graphs_. Wayne, 
+|   NJ:Chart House.
+|
+| Tufte, Edward. 1983. _The Visual Display of Quantitative Information_.
+|   Cheshire, CT: Graphics Press.
+|
+| World Bank. 2022-01. “Population total for United States.”
+|   https://fred.stlouisfed.org/series/POPTOTUSA647NWDB. 
+|   Federal Reserve Bank of St. Louis
