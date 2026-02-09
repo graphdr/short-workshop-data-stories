@@ -1,7 +1,8 @@
 ---
 title:  "Expanding your graphical repertoire"
-runningheader: "Visualization 2: Graphical repertoire" # only for pdf output
-author: "2022 MIDFIELD Institute"
+runningheader: "Graphical repertoire" # only for pdf output
+author: "Richard Layton"
+date: "2024--02-13"
 output:
   tufte::tufte_handout:
     citation_package: default

@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Expanding your graphical repertoire</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury-fonts.css" rel="stylesheet" />
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: right
+
+
+
+
+.left-column[
+&lt;img src="img/test-composite.png"&gt;
+]
+
+# Expanding your graphical repertoire
+
+###  Variables, design, message
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+Richard Layton   
+
+2024--02--13
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+&lt;https://www.graphdoctor.com&gt;
+
+&lt;https://github.com/graphdr&gt;
+
+&lt;a href="mailto:graphdoctor@gmail.com"&gt;graphdoctor@gmail.com&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+.left-column[
+&lt;img src="img/test-composite.png"&gt;
+]
+
+#### `\(\quad\)` 
+
+#### `\(\quad\)` Showing evolution
+
+#### `\(\quad\)`
+
+&lt;br&gt;
+
+#### `\(\quad\)` Displaying distributions
+
+#### `\(\quad\)`
+
+&lt;br&gt;
+
+#### `\(\quad\)` Comparing data
+
+#### `\(\quad\)`
+
+&lt;br&gt;
+
+#### `\(\quad\)` Revealing correlations
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+Optimal design categories from: Jean-luc Doumont (2009) &lt;em&gt;Trees, Maps and Theorems&lt;/em&gt;, Principiae, p. 133.
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Showing evolution
+
+
+
+
+
+
+---
+class: left
+
+# Evolution: display how a quantity evolves over time
+
+.pull-left[
+![](img/new-preview.png)
+]
+.pull-right[
+&lt;br&gt;
+- Data are time-dependent
+
+- Try different ways of organizing the data: by minute, hour, day, week, etc. 
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Displaying distributions
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Data
+
+World speed skiing competitions, 1953&amp;ndash;1995
+
+.pull-left[
+
+```
+             Event  Year    Sex  Speed
+            &lt;fctr&gt; &lt;int&gt; &lt;fctr&gt;  &lt;num&gt;
+ 1: Speed Downhill  1952   Male 167.85
+ 2: Speed Downhill  1953   Male 168.86
+ 3: Speed Downhill  1961   Male 165.42
+ 4: Speed Downhill  1962   Male 172.85
+ 5: Speed Downhill  1965   Male 189.77
+ 6: Speed Downhill  1965   Male 172.44
+ 7: Speed Downhill  1966   Male 176.01
+ 8: Speed Downhill  1967   Male 188.29
+ 9: Speed Downhill  1967   Male 172.15
+10: Speed Downhill  1969   Male 192.86
+---                                   
+82:      Speed One  1982   Male 206.80
+83:      Speed One  1982   Male 191.29
+84:      Speed One  1985 Female 202.70
+85:      Speed One  1985   Male 209.69
+86:      Speed One  1987   Male 209.70
+87:      Speed One  1990 Female 201.51
+88:      Speed One  1990 Female 199.35
+89:      Speed One  1991   Male 207.59
+90:      Speed One  1993   Male 208.33
+91:      Speed One  1993   Male 170.30
+```
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; event &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; year &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; sex &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; speed (km/hr) &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: 2011 World speed skiing competition, in the
+&lt;a href="https://CRAN.R-project.org/package=GDAdata"&gt;GDAdata&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Strip chart
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; speed &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Add a category
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-6-1.png" style="display: block; margin: auto;" /&gt;
+
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; event &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; speed &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Add a second category
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
+
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; event &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; sex &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; speed &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Data
+
+MIDFIELD graduates (N = 270k), enrolled in Engineering, excluding 10th and 90th quantiles
+
+.pull-left[
+
+```
+                  path    sex years_to_grad
+                &lt;char&gt; &lt;char&gt;         &lt;num&gt;
+     1: Nontraditional Female           3.9
+     2: Nontraditional Female           1.9
+     3: Nontraditional Female           3.9
+     4: Nontraditional Female           5.3
+     5: Nontraditional Female           5.1
+     6: Nontraditional Female           3.8
+     7: Nontraditional Female           2.7
+     8: Nontraditional Female           1.9
+     9: Nontraditional Female           2.8
+    10: Nontraditional Female           3.9
+    ---                                    
+269048:    Traditional   Male           5.7
+269049:    Traditional   Male           1.7
+269050:    Traditional   Male           3.7
+269051:    Traditional   Male           4.7
+269052:    Traditional   Male           5.7
+269053:    Traditional   Male           2.6
+269054:    Traditional   Male           1.3
+269055:    Traditional   Male           3.0
+269056:    Traditional   Male           5.3
+269057:    Traditional   Male           0.7
+```
+]
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 3in; "&gt; path &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 2in; "&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 3in; "&gt; sex &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 2in; "&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 3in; "&gt; years to graduate &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 2in; "&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: MIDFIELD subset from the 
+&lt;a href="https://github.com/graphdr/graphclassmate"&gt;graphclassmate&lt;/a&gt; R package&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Box and whisker chart
+
+&lt;br&gt;
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-12-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; years to graduate &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Add a category
+
+&lt;br&gt;
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-14-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; path &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; years to graduate &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Combine a second category
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-16-1.png" style="display: block; margin: auto;" /&gt;
+
+  
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; sex and path &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; years to graduate &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Data
+
+USD monthly peak-demand data, fiscal year 2018--2019
+
+.pull-left[
+![](img/usd-12-month.png)
+]
+.pull-right[
+
+&lt;br&gt;
+
+If we ignore time-dependence, we're left with: 
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 1.5in; "&gt; power source &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 1.5in; "&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 1.5in; "&gt; demand in MW &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;width: 1.5in; "&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Ignoring time
+
+Time is not always the most important dependent variable.
+
+&lt;br&gt;
+
+![](img/usd-energy-boxplot.png)
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Discussion
+
+.pull-left[
+![](img/variables-cycle.png)
+]
+.pull-right[
+&lt;br&gt;
+Quantitative test scores from a recent exam could be displayed as a **distribution**.
+
+- What categorical variable(s) could be added to create comparative distributions?
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Comparing data
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Data
+
+
+
+Representation at graduation in 3 engineering programs, 19 US institutions,   1987&amp;ndash;2018
+
+&lt;table class=" lightable-paper" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;font-size: 24px;"&gt; Origin &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;font-size: 24px;"&gt; Sex &lt;/th&gt;
+   &lt;th style="text-align:right;background-color: #c7eae5 !important;font-size: 24px;"&gt; Electrical Engr &lt;/th&gt;
+   &lt;th style="text-align:right;background-color: #c7eae5 !important;font-size: 24px;"&gt; Computer Engr &lt;/th&gt;
+   &lt;th style="text-align:right;background-color: #c7eae5 !important;font-size: 24px;"&gt; Computer Science &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; Domestic &lt;/td&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; Female &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 23426 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 702 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 2923 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; Domestic &lt;/td&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; Male &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 90150 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 7481 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 13987 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; International &lt;/td&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; Female &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 1865 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 140 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 365 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; International &lt;/td&gt;
+   &lt;td style="text-align:left;font-size: 24px;color: black !important;background-color: white !important;"&gt; Male &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 8530 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 993 &lt;/td&gt;
+   &lt;td style="text-align:right;font-size: 24px;color: black !important;background-color: white !important;"&gt; 1442 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: 2022 MIDFIELD  
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Dot chart
+
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-22-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; program &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; count of graduates &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Add a second category 
+
+
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-24-1.png" style="display: block; margin: auto;" /&gt;
+
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; program &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; origin &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; count of graduates &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Exchange mapping of categorical variables
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-26-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+---
+class: left
+
+# Logarithmic scale for orders of magnitude differences
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-27-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# One program per facet
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-28-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+---
+class: left
+
+# Add a third category
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-29-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; program &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; origin &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; sex &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; count of graduates &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Combine categories
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-31-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; origin/sex &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; program &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; count of graduates &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Discussion
+
+.pull-left[
+![](img/variables-cycle.png)
+]
+.pull-right[
+&lt;br&gt;
+
+## Comparing data 
+
+Consider Table 2 Campus Buildings in the USD Energy Master Plan (p. 17-18).
+
+If we were to visualize these data in dot-chart form: 
+
+- Select the quantitative variable
+
+- Select a categorical variable for the rows
+
+- What determines row order? 
+
+- Select a second categorical variable for the facets
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Revealing correlations
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Data
+
+Engineering students at 14 institutions persisting to year 4 and graduating by year 6, 1987--2019
+
+
+
+
+.pull-left[
+
+```
+    institution    sex    y4    y6
+         &lt;char&gt; &lt;char&gt; &lt;int&gt; &lt;int&gt;
+ 1:           A Female  4953  4525
+ 2:           A   Male 17897 16312
+ 3:           B Female  2834  3316
+ 4:           B   Male  9351 10473
+ 5:           C Female  2071  1764
+ 6:           C   Male 10128  8575
+ 7:           D Female  2217  2096
+ 8:           D   Male  8099  7863
+---                               
+21:           L Female   401   824
+22:           L   Male   602  1332
+23:           M Female   462   319
+24:           M   Male  1829  1160
+25:           N Female   322   228
+26:           N   Male  1338   838
+27:           P Female   457   283
+28:           P   Male   827   447
+```
+]
+
+.pull-right[
+
+&lt;br&gt;
+
+&lt;table class="table lightable-paper" style='font-size: 20px; margin-left: auto; margin-right: auto; font-family: "Arial Narrow", arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; variable &lt;/th&gt;
+   &lt;th style="text-align:left;background-color: #c7eae5 !important;"&gt; type &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; institution &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; sex &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; categorical &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; 4-yr persisters &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; 6-yr completers &lt;/td&gt;
+   &lt;td style="text-align:left;width: 1.75in; color: black !important;background-color: white !important;"&gt; quantitative &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+
+
+
+
+
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;Data source: 2022 MIDFIELD  
+&lt;/span&gt;
+&lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Scatterplots are designed to reveal correlation
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-37-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Add a category
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-38-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# One facet per sex
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-40-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# One facet per institution
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-41-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Change the quantitative variable
+
+Engineering students at 14 institutions persisting to year 4 and graduating by year 6, 1987&amp;ndash;2019
+
+&lt;img src="chart-repertoire-slides-2024_files/figure-html/unnamed-chunk-42-1.png" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class: left
+
+# Discussion
+
+.pull-left[
+![](img/variables-cycle.png)
+]
+.pull-right[
+&lt;br&gt;
+
+## Revealing correlations 
+
+Figure 17 (p. 36) of the USD Energy Master Plan:
+
+- What are the two quantitative variables?
+
+- Do the variables appear to be correlated?
+
+- Is the linear curve fit justified?
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+# Closing discussion
+
+
+
+
+
+
+
+---
+class: left
+
+# Variables, design, message
+
+- Chart design depends on your variables
+
+&lt;br&gt;
+
+- Chart design depends on the message the data convey 
+
+&lt;br&gt;
+
+- Continue to expand your repertoire of chart types
+
+
+
+
+
+
+---
+class:inverse, center, middle
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
