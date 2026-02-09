@@ -5,17 +5,11 @@ description: |
   limitations and improve perception, reasoning, and credibility. 
 ---
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-
 **Limitations of common graph types**
 
 We demonstrate the perceptual limitations of common graph types and suggest more effective alternatives. 
 
-<img src="images/stacked-bar-preview.png" alt="stacked-bar chart" style="width:300px">
+<img src="images/index-page.png" alt="stacked-bar chart" style="width:300px">
 
 The rationale behind alternative designs is illustrated with the goals of 
   
@@ -25,7 +19,7 @@ The rationale behind alternative designs is illustrated with the goals of
 
 **Materials**
 
-- [worksheets](slides/handouts-day1-01.pdf)  I suggest you have a printed copy of these worksheets to write in during the workshop. We have a number of think-write-share activities that for many people work best in writing. 
+- worksheets: I suggest you have a printed copy of these worksheets to write in during the workshop. We have a number of think-write-share activities that for many people work best in writing. 
 
 
 - [slides](slides/effective-charts-slides-2026.html) used during the workshop. 
